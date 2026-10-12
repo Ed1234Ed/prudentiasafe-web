@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_capturas/
+
+Sitemap: https://prudentiasafe.com/sitemap.xml
