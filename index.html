@@ -18,9 +18,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="icono-512.png" sizes="512x512" type="image/png">
   <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/img/supervisor-1800.webp" type="image/webp">
-  <link rel="stylesheet" href="assets/css/sitio.css?v=3">
+  <link rel="stylesheet" href="assets/css/sitio.css?v=4">
   <script>(function(){try{var t=localStorage.getItem("tema");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}document.documentElement.classList.add("js");})();</script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"ProfessionalService","name":"Prudentia Safe S.A.C.","slogan":"Seguridad que trasciende","url":"https://prudentiasafe.com/","logo":"https://prudentiasafe.com/assets/logos/S%C3%ADmbolo%20a%20color.svg","image":"https://prudentiasafe.com/assets/img/og-prudentia-safe.jpg","email":"contacto@prudentiasafe.com","address":{"@type":"PostalAddress","addressLocality":"Lima","addressCountry":"PE"},"areaServed":"PE"}
@@ -39,9 +40,10 @@
         <ul>
           <li><a href="#cifras">Cifras</a></li>
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#ley">Lo que exige la ley</a></li>
+          <li><a href="#ley">La ley</a></li>
           <li><a href="#autodiagnostico">Autodiagnóstico</a></li>
           <li><a href="#multas">Multas</a></li>
+          <li><a href="investigacion.html">Investigación</a></li>
           <li><a href="#preguntas">Preguntas</a></li>
         </ul>
       </nav>
@@ -57,9 +59,10 @@
     <ul>
       <li><a href="#cifras">Cifras</a></li>
       <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#ley">Lo que exige la ley</a></li>
+      <li><a href="#ley">La ley</a></li>
       <li><a href="#autodiagnostico">Autodiagnóstico</a></li>
       <li><a href="#multas">Multas</a></li>
+      <li><a href="investigacion.html">Investigación</a></li>
       <li><a href="#preguntas">Preguntas</a></li>
     </ul>
     <button class="btn btn--primario btn--bloque" type="button" data-abrir-hoja>Solicitar diagnóstico</button>
@@ -113,35 +116,45 @@
       </div>
     </section>
 
-    <section class="seccion cifras" id="cifras" aria-labelledby="t-cifras">
+
+    <section class="seccion foto-fondo foto-fondo--suave sobre-foto cifras" id="cifras" aria-labelledby="t-cifras">
+      <picture><source type="image/avif" srcset="assets/img/charla-1000.avif 1000w, assets/img/charla-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/charla-1000.webp 1000w, assets/img/charla-1800.webp 1800w" sizes="100vw"><img src="assets/img/charla-1000.jpg" width="1000" height="667" alt="" loading="lazy" decoding="async"></picture>
+      <div class="foto-fondo__velo" aria-hidden="true"></div>
       <div class="contenedor">
-        <div class="cabeza-seccion">
+        <div class="cabeza-seccion cabeza-seccion--centro">
           <p class="ante">El punto de partida</p>
           <h2 class="titulo revela" id="t-cifras">En el Perú se notifica un accidente de trabajo cada 12 minutos</h2>
-          <p class="bajada revela">En 2025 las empresas notificaron al Ministerio de Trabajo 43&nbsp;978 accidentes de trabajo. Cada número es una persona que salió a trabajar y una familia que la esperaba de vuelta.</p>
+          <p class="bajada revela">En 2025 las empresas notificaron al Ministerio de Trabajo 43&nbsp;978 accidentes de trabajo. Detrás de cada número hay una persona que salió a trabajar y una familia que la esperaba de vuelta.</p>
         </div>
-        <ul class="cifras__lista">
-          <li class="tarjeta cifra revela"><strong data-contar="44602">44&nbsp;602</strong><span>notificaciones en 2025, 14,7 % más que en 2024 y la cifra más alta desde 2011</span></li>
-          <li class="tarjeta cifra revela"><strong class="acento" data-contar="228">228</strong><span>accidentes mortales: uno cada 38 horas</span></li>
-          <li class="tarjeta cifra revela"><strong data-contar="494">494</strong><span>incidentes peligrosos que pudieron terminar en una tragedia</span></li>
-          <li class="tarjeta cifra revela"><strong data-contar="88" data-sufijo=" %">88 %</strong><span>de las notificaciones vienen de empresas con sede en Lima y Callao</span></li>
+        <ul class="kpis">
+          <li class="kpi vidrio revela"><strong data-contar="44602">44&nbsp;602</strong><span>notificaciones en 2025</span><small>14,7&nbsp;% más que en 2024 y la cifra más alta desde 2011</small></li>
+          <li class="kpi vidrio revela"><strong class="acento" data-contar="228">228</strong><span>accidentes mortales</span><small>uno cada 38 horas</small></li>
+          <li class="kpi vidrio revela"><strong data-contar="8868">8&nbsp;868</strong><span>accidentes incapacitantes</span><small>el 20,2&nbsp;% del total; 211 con incapacidad total permanente</small></li>
+          <li class="kpi vidrio revela"><strong data-contar="88" data-sufijo=" %">88&nbsp;%</strong><span>vienen de empresas con sede en Lima y Callao</span><small>por lugar del accidente, cerca del 76&nbsp;%</small></li>
         </ul>
-        <p class="nota">Fuente: Ministerio de Trabajo y Promoción del Empleo, boletín estadístico de notificaciones de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales, diciembre de 2025.</p>
+        <ul class="claves">
+          <li class="vidrio revela"><b>86&nbsp;%</b><span>de los accidentes mortales y 76&nbsp;% de los no mortales afectaron a hombres.</span></li>
+          <li class="vidrio revela"><b>79&nbsp;%</b><span>de los accidentes no mortales ocurrió en el turno de día.</span></li>
+          <li class="vidrio revela"><b>+45&nbsp;%</b><span>accidentes mortales entre enero y julio de 2026 frente al mismo periodo de 2025 (170 frente a 117, cifras preliminares).</span></li>
+        </ul>
+        <p class="nota nota--centro">Fuente: MTPE, boletines estadísticos de notificaciones (SAT) de diciembre de 2025 y julio de 2026, y archivo anual 2025 por actividad económica. Las cifras corresponden a lo que se notifica, no necesariamente a todo lo que ocurre.</p>
       </div>
     </section>
+
 
     <section class="seccion seccion--2" id="datos" aria-labelledby="t-datos">
       <div class="contenedor">
         <div class="cabeza-seccion">
           <p class="ante">Dónde y cómo ocurren</p>
           <h2 class="titulo revela" id="t-datos">Los accidentes se repiten en los mismos lugares</h2>
-          <p class="bajada revela">Conocer el patrón es el primer paso para cortarlo. Explore los datos oficiales por año, sector, forma del accidente y parte del cuerpo.</p>
+          <p class="bajada revela">Conocer el patrón es el primer paso para cortarlo. Explore los datos oficiales por año, mes, causa de muerte, forma del accidente y parte del cuerpo.</p>
         </div>
         <div class="pestanas" role="tablist" aria-label="Vista de los datos">
           <button type="button" role="tab" id="p-anual" aria-controls="v-anual" aria-selected="true">Evolución 2019 a 2025</button>
-          <button type="button" role="tab" id="p-sector" aria-controls="v-sector" aria-selected="false" tabindex="-1">Por sector</button>
-          <button type="button" role="tab" id="p-forma" aria-controls="v-forma" aria-selected="false" tabindex="-1">Por forma del accidente</button>
-          <button type="button" role="tab" id="p-cuerpo" aria-controls="v-cuerpo" aria-selected="false" tabindex="-1">Por parte del cuerpo</button>
+          <button type="button" role="tab" id="p-mes" aria-controls="v-mes" aria-selected="false" tabindex="-1">Mes a mes 2025 y 2026</button>
+          <button type="button" role="tab" id="p-muertes" aria-controls="v-muertes" aria-selected="false" tabindex="-1">Qué causa las muertes</button>
+          <button type="button" role="tab" id="p-forma" aria-controls="v-forma" aria-selected="false" tabindex="-1">Forma del accidente</button>
+          <button type="button" role="tab" id="p-cuerpo" aria-controls="v-cuerpo" aria-selected="false" tabindex="-1">Parte del cuerpo</button>
         </div>
 
         <div class="panel tarjeta" id="v-anual" role="tabpanel" aria-labelledby="p-anual">
@@ -154,34 +167,52 @@
             </div>
           </div>
           <div class="grafico__lienzo" id="grafico"></div>
-          <p class="nota">En 2020 la caída coincide con la paralización de actividades por la emergencia sanitaria. Las cifras corresponden a lo que las empresas notifican; el MTPE actualiza su serie histórica.</p>
+          <p class="nota">En 2020 la caída coincide con la paralización por la emergencia sanitaria. El MTPE actualiza su serie: por ejemplo, el boletín de diciembre de 2020 reportó 22&nbsp;503 notificaciones y la serie actual registra 23&nbsp;130 por notificaciones tardías.</p>
         </div>
 
-        <div class="panel tarjeta" id="v-sector" role="tabpanel" aria-labelledby="p-sector" hidden>
+        <div class="panel tarjeta" id="v-mes" role="tabpanel" aria-labelledby="p-mes" hidden>
+          <div class="grafico__cab">
+            <h3 id="mes-titulo">Notificaciones por mes</h3>
+            <div class="pastillas" role="group" aria-label="Serie mensual">
+              <button type="button" aria-pressed="true" data-mserie="total">Total</button>
+              <button type="button" aria-pressed="false" data-mserie="mortales">Mortales</button>
+            </div>
+          </div>
+          <div class="leyenda" aria-hidden="true"><span class="l-2025">2025</span><span class="l-2026">2026 (enero a julio, preliminar)</span></div>
+          <div class="grafico__lienzo" id="grafico-mes"></div>
+          <p class="nota">El pico de 2025 fue octubre, con 4&nbsp;101 notificaciones y 28 accidentes mortales. De enero a julio de 2026 se notificaron 27&nbsp;390 casos, 7&nbsp;% más que en el mismo periodo de 2025. El último boletín publicado es el de julio de 2026.</p>
+        </div>
+
+        <div class="panel tarjeta" id="v-muertes" role="tabpanel" aria-labelledby="p-muertes" hidden>
           <div class="panel__dos">
             <div>
-              <div class="pastillas" role="group" aria-label="Tipo de notificación">
-                <button type="button" aria-pressed="true" data-sector="total">Todas las notificaciones</button>
-                <button type="button" aria-pressed="false" data-sector="mortales">Solo mortales</button>
-              </div>
-              <ol class="barras" id="barras-sector"></ol>
+              <h3 class="panel__t">228 accidentes mortales en 2025, según la forma del accidente</h3>
+              <ol class="barras" id="barras-muertes"></ol>
+              <p class="nota">Porcentajes sobre los 142 mortales con forma registrada; otros 86 no tienen forma clasificada.</p>
             </div>
-            <figure>
-              <div class="foto-redonda"><picture><source type="image/avif" srcset="assets/img/montacargas-1000.avif 1000w, assets/img/montacargas-1800.avif 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><source type="image/webp" srcset="assets/img/montacargas-1000.webp 1000w, assets/img/montacargas-1800.webp 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><img src="assets/img/montacargas-1000.jpg" width="1000" height="667" alt="Operario con lentes de seguridad conduce un montacargas en un almacén" loading="lazy" decoding="async"></picture></div>
-              <figcaption>Manufactura reúne casi una de cada cinco notificaciones. En los accidentes mortales lidera el transporte y almacenamiento, donde un error con un vehículo o una carga suele ser irreversible.</figcaption>
-            </figure>
+            <div class="destacado">
+              <strong>45 de 60</strong>
+              <p>muertes por caídas de personas fueron caídas a distinto nivel, desde altura o en profundidad.</p>
+              <strong>54</strong>
+              <p>muertes tuvieron como agente a medios de transporte y de manutención, el agente identificado más frecuente.</p>
+              <strong>52 de 228</strong>
+              <p>accidentes mortales ocurrieron en Lima Metropolitana: la mayoría ocurre fuera de la capital.</p>
+            </div>
           </div>
         </div>
 
         <div class="panel tarjeta" id="v-forma" role="tabpanel" aria-labelledby="p-forma" hidden>
           <div class="panel__dos">
-            <ol class="barras" id="barras-forma"></ol>
+            <div>
+              <h3 class="panel__t">Accidentes no mortales de 2025 según la forma del accidente</h3>
+              <ol class="barras" id="barras-forma"></ol>
+            </div>
             <figure>
               <div class="foto-redonda"><picture><source type="image/avif" srcset="assets/img/altura-1000.avif 1000w, assets/img/altura-1800.avif 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><source type="image/webp" srcset="assets/img/altura-1000.webp 1000w, assets/img/altura-1800.webp 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><img src="assets/img/altura-1000.jpg" width="1000" height="667" alt="Dos trabajadores con arnés y línea de vida caminan sobre una cubierta" loading="lazy" decoding="async"></picture></div>
-              <figcaption>Las caídas de personas encabezan la lista: casi un tercio de los accidentes no mortales con forma registrada. La mayoría se previene con orden, iluminación y protección en los bordes.</figcaption>
+              <figcaption>Las caídas de personas encabezan la lista: casi un tercio de los accidentes no mortales con forma registrada. De ellas, 2&nbsp;677 fueron caídas a distinto nivel y 5&nbsp;096 al mismo nivel.</figcaption>
             </figure>
           </div>
-          <p class="nota">Porcentajes sobre los 24&nbsp;594 accidentes no mortales con forma registrada en 2025. Otros 19&nbsp;156 figuran sin clasificar por falta de datos.</p>
+          <p class="nota">Porcentajes sobre los 24&nbsp;594 accidentes no mortales con forma registrada en 2025. Otros 19&nbsp;156 (43,8&nbsp;%) figuran sin clasificar por falta de datos.</p>
         </div>
 
         <div class="panel tarjeta" id="v-cuerpo" role="tabpanel" aria-labelledby="p-cuerpo" hidden>
@@ -192,9 +223,9 @@
             <div class="cuerpo__panel" id="cuerpo-panel" aria-live="polite"></div>
             <div class="cuerpo__lista" id="cuerpo-lista" role="group" aria-label="Partes del cuerpo"></div>
           </div>
-          <p class="nota">Porcentajes sobre los 43&nbsp;750 accidentes no mortales de 2025. Las lesiones en ubicaciones múltiples suman 6,8 % y no se muestran en la figura.</p>
+          <p class="nota">Porcentajes sobre los 43&nbsp;750 accidentes no mortales de 2025. La categoría oficial de cabeza incluye ubicaciones múltiples en la cabeza; las lesiones en varias partes del cuerpo suman 6,8&nbsp;% y no se muestran en la figura.</p>
         </div>
-        <p class="nota" style="margin-top:20px">Elaboración propia con base en los boletines mensuales de notificaciones del MTPE, enero a diciembre de 2025.</p>
+        <p class="nota" style="margin-top:20px">Fuente: MTPE, archivo anual de notificaciones 2025 por actividad económica y boletines mensuales del SAT. Cálculos de Prudentia Safe sobre datos oficiales.</p>
       </div>
     </section>
 
@@ -237,203 +268,280 @@
       </div>
     </section>
 
+
     <section class="seccion" id="ley" aria-labelledby="t-ley">
       <div class="contenedor">
         <div class="cabeza-seccion">
           <p class="ante">Lo que exige la ley</p>
           <h2 class="titulo revela" id="t-ley">Qué le exige la Ley N.&#8288;°&nbsp;29783 a su empresa</h2>
-          <p class="bajada revela">Las obligaciones cambian con el número de trabajadores, el tamaño de la empresa y el riesgo de la actividad. Ajuste los datos y la lista se actualiza.</p>
+          <p class="bajada revela">Las obligaciones cambian con el número de trabajadores, el tamaño de la empresa y el riesgo de la actividad. Ajuste los datos y vea su lista ordenada por tema.</p>
         </div>
         <div class="rejilla">
-          <form class="r-4 tarjeta mandos" id="ley-form" onsubmit="return false" aria-label="Datos de su empresa">
-            <div class="mando">
-              <label for="ley-n">Número de trabajadores</label>
-              <output id="ley-n-v" for="ley-n" class="tnum">25</output>
-              <input type="range" id="ley-n" min="1" max="500" value="25" step="1">
-              <div class="escala" aria-hidden="true"><span>1</span><span>250</span><span>500 o más</span></div>
-            </div>
-            <fieldset class="mando">
-              <legend>Tamaño de la empresa</legend>
-              <div class="chips">
-                <label><input type="radio" name="ley-t" value="micro"><span>Micro</span></label>
-                <label><input type="radio" name="ley-t" value="pequena"><span>Pequeña</span></label>
-                <label><input type="radio" name="ley-t" value="nomype" checked><span>No MYPE</span></label>
+          <div class="r-4 ley__lado">
+            <form class="tarjeta mandos" id="ley-form" onsubmit="return false" aria-label="Datos de su empresa">
+              <div class="mando">
+                <label for="ley-n">Número de trabajadores</label>
+                <output id="ley-n-v" for="ley-n" class="tnum">25</output>
+                <input type="range" id="ley-n" min="1" max="500" value="25" step="1">
+                <div class="escala" aria-hidden="true"><span>1</span><span>20</span><span>250</span><span>500 o más</span></div>
               </div>
-              <p class="ayuda">MYPE: micro y pequeña empresa inscrita en el REMYPE. No MYPE: mediana o gran empresa.</p>
-            </fieldset>
-            <fieldset class="mando">
-              <legend>¿Realiza actividades de alto riesgo?</legend>
-              <div class="chips">
-                <label><input type="radio" name="ley-r" value="si"><span>Sí</span></label>
-                <label><input type="radio" name="ley-r" value="no" checked><span>No</span></label>
-              </div>
-              <p class="ayuda">Por ejemplo construcción, minería o trabajos en altura, según el Anexo 5 del D. S. N.&#8288;°&nbsp;009-97-SA.</p>
-            </fieldset>
-          </form>
+              <fieldset class="mando">
+                <legend>Tamaño de la empresa</legend>
+                <div class="chips">
+                  <label><input type="radio" name="ley-t" value="micro"><span>Micro</span></label>
+                  <label><input type="radio" name="ley-t" value="pequena"><span>Pequeña</span></label>
+                  <label><input type="radio" name="ley-t" value="nomype" checked><span>No MYPE</span></label>
+                </div>
+                <p class="ayuda">MYPE: micro o pequeña empresa inscrita en el REMYPE. No MYPE: mediana o gran empresa.</p>
+              </fieldset>
+              <fieldset class="mando">
+                <legend>¿Realiza actividades de alto riesgo?</legend>
+                <div class="chips">
+                  <label><input type="radio" name="ley-r" value="si"><span>Sí</span></label>
+                  <label><input type="radio" name="ley-r" value="no" checked><span>No</span></label>
+                </div>
+                <p class="ayuda">Actividades del Anexo 5 del D. S. N.&#8288;°&nbsp;009-97-SA, actualizado por el D. S. N.&#8288;°&nbsp;008-2022-SA; por ejemplo construcción, minería o generación eléctrica.</p>
+              </fieldset>
+            </form>
+            <div class="resumen-ley" id="resumen-ley" aria-live="polite"></div>
+          </div>
           <div class="r-8">
-            <ol class="obligaciones" id="obligaciones" aria-live="polite"></ol>
-            <p class="nota" style="margin-top:20px">Fuentes: Ley N.&#8288;°&nbsp;29783 y su Reglamento (D. S. N.&#8288;°&nbsp;005-2012-TR) con sus modificatorias, R. M. N.&#8288;°&nbsp;050-2013-TR, R. M. N.&#8288;°&nbsp;085-2013-TR y D. S. N.&#8288;°&nbsp;014-2013-TR. Guía referencial; no reemplaza la evaluación de cada caso.</p>
+            <div class="leyenda-ley"><span class="marca-cambia">Cambia con sus datos</span> Las obligaciones con esta marca dependen del número de trabajadores, del tamaño o del riesgo que usted eligió. Las demás aplican a todas las empresas.</div>
+            <div class="grupos-ley" id="obligaciones" aria-live="polite"></div>
+            <p class="nota" style="margin-top:20px">Fuentes: Ley N.&#8288;°&nbsp;29783 y su Reglamento (D. S. N.&#8288;°&nbsp;005-2012-TR) con sus modificatorias, Leyes N.&#8288;°&nbsp;30222 y N.&#8288;°&nbsp;31246, D. S. N.&#8288;°&nbsp;001-2021-TR, R. M. N.&#8288;°&nbsp;050-2013-TR, R. M. N.&#8288;°&nbsp;085-2013-TR y D. S. N.&#8288;°&nbsp;014-2013-TR. Guía referencial; no reemplaza la evaluación de cada caso.</p>
           </div>
         </div>
       </div>
     </section>
+
 
     <section class="seccion seccion--2" id="autodiagnostico" aria-labelledby="t-auto">
-      <div class="contenedor rejilla">
-        <div class="r-5">
-          <p class="ante">Autodiagnóstico</p>
-          <h2 class="titulo revela" id="t-auto">Mida su cumplimiento antes de que lo haga un inspector</h2>
-          <p class="bajada revela">Doce preguntas sobre los requisitos básicos del sistema de gestión. Toma tres minutos y al final verá las brechas ordenadas por prioridad.</p>
-        </div>
-        <div class="r-7 tarjeta revela" id="auto">
-          <div id="auto-marco">
-            <div class="auto__barra" aria-hidden="true"><span id="auto-avance"></span></div>
-            <div class="auto__pregunta" id="auto-pregunta" aria-live="polite"></div>
-            <div class="respuestas" id="auto-resp" role="group" aria-label="Respuesta">
-              <button type="button" class="resp resp--si" data-v="2"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11 18.5c1.3 1.8 3 2.7 5 2.7s3.7-.9 5-2.7"/><path d="M12 13h.01M20 13h.01"/></svg>Sí</button>
-              <button type="button" class="resp resp--parte" data-v="1"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11 20h10"/><path d="M12 13h.01M20 13h.01"/></svg>En parte</button>
-              <button type="button" class="resp resp--no" data-v="0"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11 21.5c1.3-1.8 3-2.7 5-2.7s3.7.9 5 2.7"/><path d="M12 13h.01M20 13h.01"/></svg>No</button>
-            </div>
-            <div class="auto__pie"><button type="button" id="auto-atras" disabled>Pregunta anterior</button><span id="auto-conteo" class="tnum">1 de 12</span></div>
+      <div class="contenedor">
+        <div class="rejilla rejilla--centro auto__cab">
+          <div class="r-7">
+            <p class="ante">Autodiagnóstico gratuito</p>
+            <h2 class="titulo revela" id="t-auto">Conozca el nivel de su sistema de gestión en ocho minutos</h2>
+            <p class="bajada revela">Treinta preguntas en seis dimensiones, basadas en la Ley N.&#8288;°&nbsp;29783, su Reglamento y la norma ISO 45001. Al terminar verá su puntaje por dimensión, las brechas críticas con su base legal y qué hacer primero.</p>
           </div>
-          <div class="resultado" id="auto-resultado" hidden>
-            <svg class="anillo" viewBox="0 0 120 120" aria-hidden="true"><g transform="rotate(-90 60 60)"><circle class="pista" cx="60" cy="60" r="52"/><circle class="valor" id="anillo-v" cx="60" cy="60" r="52"/></g><text x="60" y="60" text-anchor="middle" dominant-baseline="central"><tspan id="auto-puntaje">0</tspan><tspan class="pc" dx="2" dy="-8">%</tspan></text></svg>
-            <div>
-              <span class="nivel" id="auto-nivel"></span>
-              <p id="auto-texto"></p>
-              <ul class="brechas" id="auto-brechas"></ul>
-              <div class="acciones">
-                <button class="btn btn--primario" type="button" id="auto-enviar">Solicitar diagnóstico</button>
-                <button class="btn btn--secundario" type="button" id="auto-reiniciar">Volver a empezar</button>
+          <ul class="r-5 auto__beneficios revela">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Puntaje global y por dimensión</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg><span>Brechas críticas con su base legal</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg><span>Informe imprimible para su gerencia</span></li>
+          </ul>
+        </div>
+        <div class="tarjeta auto" id="auto" aria-live="polite"></div>
+      </div>
+    </section>
+
+
+    <section class="seccion foto-fondo sobre-foto multas" id="multas" aria-labelledby="t-calc">
+      <picture><source type="image/avif" srcset="assets/img/inspeccion-1000.avif 1000w, assets/img/inspeccion-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/inspeccion-1000.webp 1000w, assets/img/inspeccion-1800.webp 1800w" sizes="100vw"><img src="assets/img/inspeccion-1000.jpg" width="1000" height="667" alt="" loading="lazy" decoding="async"></picture>
+      <div class="foto-fondo__velo" aria-hidden="true"></div>
+      <div class="contenedor">
+        <div class="cabeza-seccion">
+          <p class="ante">Calculadora de multas</p>
+          <h2 class="titulo revela" id="t-calc">Cuánto puede costar una infracción ante SUNAFIL</h2>
+          <p class="bajada revela">Elija una infracción real del Reglamento de la Ley General de Inspección del Trabajo, el tamaño de la empresa y los trabajadores afectados. Puede sumar varias infracciones y ver cuánto se reduce la multa si se corrige a tiempo.</p>
+        </div>
+        <div class="rejilla calc-rejilla">
+          <form class="r-7 tarjeta calc" id="calc-form" onsubmit="return false" aria-label="Calculadora de multas">
+            <fieldset>
+              <legend>Tamaño de la empresa</legend>
+              <div class="chips">
+                <label><input type="radio" name="c-t" value="micro"><span>Micro</span></label>
+                <label><input type="radio" name="c-t" value="pequena"><span>Pequeña</span></label>
+                <label><input type="radio" name="c-t" value="nomype" checked><span>No MYPE</span></label>
               </div>
+            </fieldset>
+            <div class="campo">
+              <label for="c-inf">Infracción en seguridad y salud en el trabajo</label>
+              <select id="c-inf"></select>
+              <p class="ayuda" id="c-inf-texto"></p>
             </div>
+            <div class="calc__fila">
+              <div class="campo">
+                <label for="c-n" id="c-n-et">Trabajadores afectados</label>
+                <input type="number" id="c-n" min="1" max="20000" value="30" inputmode="numeric">
+              </div>
+              <label class="interruptor"><input type="checkbox" id="c-rei"><span></span>Reiteración en los últimos 12 meses</label>
+            </div>
+            <p class="aviso" id="c-aviso" hidden></p>
+            <div class="calc__acciones">
+              <button class="btn btn--secundario" type="button" id="c-agregar">Sumar a la estimación</button>
+              <span class="nota" id="c-lista-n"></span>
+            </div>
+            <ol class="lista-multas" id="c-lista"></ol>
+          </form>
+          <div class="r-5 vidrio resultado-calc" aria-live="polite">
+            <span class="rc__k">Multa estimada por esta infracción</span>
+            <strong id="calc-soles" class="tnum">S/ 0</strong>
+            <span id="calc-uit" class="tnum rc__uit">0 UIT</span>
+            <div class="medidor" aria-hidden="true"><span id="calc-barra"></span></div>
+            <p id="calc-tramo" class="rc__tramo"></p>
+            <ul class="escenarios" id="escenarios"></ul>
+            <div class="rc__total" id="calc-total" hidden></div>
+            <p class="rc__nota">UIT 2026: S/&nbsp;5&nbsp;500 (D. S. N.&#8288;°&nbsp;301-2025-EF). Tabla del art. 48.1 del D. S. N.&#8288;°&nbsp;019-2006-TR, texto del D. S. N.&#8288;°&nbsp;008-2020-TR. Topes de 50, 100 y 200 UIT por infracción y 300 UIT en total (Ley N.&#8288;°&nbsp;28806, art. 39). Cálculo referencial.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="seccion" id="multas" aria-labelledby="t-calc">
-      <div class="contenedor rejilla">
-        <div class="r-5">
-          <p class="ante">Calculadora de multas</p>
-          <h2 class="titulo revela" id="t-calc">Cuánto puede costar una infracción ante SUNAFIL</h2>
-          <p class="bajada revela">Elija el tamaño de la empresa, la gravedad y los trabajadores afectados. El cálculo usa la tabla vigente del Reglamento de la Ley General de Inspección del Trabajo.</p>
-          <p class="nota revela">Cálculo referencial con la UIT 2026 de S/&nbsp;5&nbsp;500 (D. S. N.&#8288;°&nbsp;301-2025-EF) y el art. 48.1 del D. S. N.&#8288;°&nbsp;019-2006-TR, modificado por el D. S. N.&#8288;°&nbsp;008-2020-TR. Las tablas de micro y pequeña empresa exigen inscripción en el REMYPE. Si un accidente causa la muerte o una incapacidad permanente, se considera afectados a todos los trabajadores. Cada infracción se multa por separado.</p>
-        </div>
-        <form class="r-7 r-primero tarjeta calc revela" id="calc-form" onsubmit="return false" aria-label="Calculadora de multas">
-          <fieldset>
-            <legend>Tamaño de la empresa</legend>
-            <div class="chips">
-              <label><input type="radio" name="c-t" value="micro"><span>Micro</span></label>
-              <label><input type="radio" name="c-t" value="pequena"><span>Pequeña</span></label>
-              <label><input type="radio" name="c-t" value="nomype" checked><span>No MYPE</span></label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Gravedad de la infracción</legend>
-            <div class="chips">
-              <label><input type="radio" name="c-g" value="leve"><span>Leve</span></label>
-              <label><input type="radio" name="c-g" value="grave" checked><span>Grave</span></label>
-              <label><input type="radio" name="c-g" value="muy_grave"><span>Muy grave</span></label>
-            </div>
-          </fieldset>
-          <label class="et" for="c-n">Trabajadores afectados</label>
-          <div class="campo-num"><input type="number" id="c-n" min="1" max="5000" value="30" inputmode="numeric"></div>
-          <div class="resultado-multa" aria-live="polite">
-            <span>Multa por cada infracción</span>
-            <strong id="calc-soles">S/ 0</strong>
-            <span id="calc-uit" class="tnum">0 UIT</span>
-            <div class="medidor" aria-hidden="true"><span id="calc-barra"></span></div>
-            <p id="calc-tramo"></p>
+    <section class="seccion centro-teaser" id="investigacion" aria-labelledby="t-centro">
+      <div class="contenedor">
+        <div class="rejilla rejilla--centro">
+          <div class="r-7">
+            <p class="ante">Centro Prudentia de Evidencia</p>
+            <h2 class="titulo revela" id="t-centro">Qué dice la evidencia sobre cómo prevenir cada riesgo</h2>
+            <p class="bajada revela">Fichas breves con lo que suele ocurrir en planta y obra, lo que muestran las revisiones científicas y las guías técnicas, y lo que exige la norma peruana. Cada hallazgo indica qué tan sólida es su evidencia.</p>
           </div>
-        </form>
+          <div class="r-5 centro-teaser__cta revela">
+            <p><b>10 fichas</b> · caídas, máquinas, manos, ojos, cargas, montacargas, espacios confinados, electricidad y fatiga</p>
+            <a class="btn btn--primario" href="investigacion.html">Ver el centro de evidencia</a>
+          </div>
+        </div>
+        <ul class="fichas-mini">
+          <li class="tarjeta ficha-mini revela"><span class="ficha-mini__n">Ficha 01</span><h3>Caídas de altura</h3><p>Ocurren en techos, losas sin baranda, bordes de excavación, andamios incompletos y escaleras portátiles, durante tareas de montaje, mantenimiento o limpieza.</p><p class="ficha-mini__ev"><span class="sol sol--moderada">Evidencia moderada</span>La capacitación en SST mejora de forma consistente los comportamientos seguros, pero la evidencia es insuficiente para afirmar que por sí sola reduce lesiones o síntomas.</p><a class="btn--fantasma" href="investigacion.html#ficha-1">Leer la ficha <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></li>
+          <li class="tarjeta ficha-mini revela"><span class="ficha-mini__n">Ficha 03</span><h3>Atrapamiento y amputaciones en máquinas</h3><p>Ocurren cuando una mano, un brazo o la ropa entran en contacto con rodillos, fajas, engranajes, tornillos sin fin, prensas o cuchillas porque la guarda fue retirada, nunca existió o puede evitarse con facilidad.</p><p class="ficha-mini__ev"><span class="sol sol--moderada">Evidencia moderada</span>En el análisis de muertes relacionadas con bloqueo y etiquetado en la manufactura de Estados Unidos (1984 a 1997), el procedimiento de bloqueo ni siquiera se intentó en al menos el 58,8&nbsp;% de los casos.</p><a class="btn--fantasma" href="investigacion.html#ficha-3">Leer la ficha <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></li>
+          <li class="tarjeta ficha-mini revela"><span class="ficha-mini__n">Ficha 06</span><h3>Manipulación manual de cargas y lumbalgia</h3><p>La lumbalgia y otros trastornos musculoesqueléticos aparecen al levantar, cargar, empujar o arrastrar pesos con frecuencia, con el tronco flexionado o girado, desde el suelo o por encima de los hombros, y en tareas repetitivas con poco descanso.</p><p class="ficha-mini__ev"><span class="sol sol--moderada">Evidencia moderada</span>Hay evidencia de calidad moderada (7 ensayos, 19 317 trabajadores) de que la capacitación y los consejos sobre técnicas de levantamiento, con o sin ayudas mecánicas, no previenen el dolor lumbar ni la discapacidad asociada frente a no intervenir (odds ratio 1,17.</p><a class="btn--fantasma" href="investigacion.html#ficha-6">Leer la ficha <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></li>
+        </ul>
       </div>
     </section>
+
 
     <section class="seccion seccion--2" id="metodo" aria-labelledby="t-metodo">
       <div class="contenedor">
         <div class="cabeza-seccion">
           <p class="ante">Método</p>
           <h2 class="titulo revela" id="t-metodo">Tres momentos de la prudencia aplicados a la gestión</h2>
-          <p class="bajada revela">Mirar lo que pasó, entender lo que pasa y decidir antes de que pase. Así se ordena cada proyecto.</p>
+          <p class="bajada revela">Mirar lo que pasó, entender lo que pasa y decidir antes de que pase. Elija un momento para ver qué hacemos y qué recibe su empresa.</p>
         </div>
-        <div class="momentos">
-          <article class="tarjeta momento revela"><picture><source type="image/avif" srcset="assets/img/recorrido-1000.avif 1000w, assets/img/recorrido-1800.avif 1800w" sizes="(min-width: 768px) 33vw, 100vw"><source type="image/webp" srcset="assets/img/recorrido-1000.webp 1000w, assets/img/recorrido-1800.webp 1800w" sizes="(min-width: 768px) 33vw, 100vw"><img src="assets/img/recorrido-1000.jpg" width="1000" height="635" alt="Supervisor y técnico revisan planos dentro de una nave industrial" loading="lazy" decoding="async"></picture><div class="momento__txt"><span class="momento__n">Primer momento</span><h3>Memoria</h3><p class="pregunta">¿Qué ocurrió?</p><p>Registros, investigación de incidentes y estadísticas. Aprender de lo ocurrido para que no se repita.</p></div></article>
-          <article class="tarjeta momento revela"><picture><source type="image/avif" srcset="assets/img/maquina-1000.avif 1000w, assets/img/maquina-1800.avif 1800w" sizes="(min-width: 768px) 33vw, 100vw"><source type="image/webp" srcset="assets/img/maquina-1000.webp 1000w, assets/img/maquina-1800.webp 1800w" sizes="(min-width: 768px) 33vw, 100vw"><img src="assets/img/maquina-1000.jpg" width="1000" height="563" alt="Técnico con casco y guantes inspecciona una máquina" loading="lazy" decoding="async"></picture><div class="momento__txt"><span class="momento__n">Segundo momento</span><h3>Inteligencia</h3><p class="pregunta">¿Qué ocurre?</p><p>Inspecciones, diagnóstico inicial e identificación de peligros en el puesto, con pruebas a la vista.</p></div></article>
-          <article class="tarjeta momento revela"><picture><source type="image/avif" srcset="assets/img/planta-1000.avif 1000w, assets/img/planta-1800.avif 1800w" sizes="(min-width: 768px) 33vw, 100vw"><source type="image/webp" srcset="assets/img/planta-1000.webp 1000w, assets/img/planta-1800.webp 1800w" sizes="(min-width: 768px) 33vw, 100vw"><img src="assets/img/planta-1000.jpg" width="1000" height="670" alt="Ingeniero con casco revisa un documento frente a una planta de procesos" loading="lazy" decoding="async"></picture><div class="momento__txt"><span class="momento__n">Tercer momento</span><h3>Previsión</h3><p class="pregunta">¿Qué puede ocurrir?</p><p>Evaluación de riesgos, controles, planes de emergencia y simulacros: decidir antes de que ocurra un accidente.</p></div></article>
+        <div class="metodo tarjeta">
+          <div class="metodo__tabs" role="tablist" aria-label="Momentos del método">
+            <button type="button" role="tab" id="pm-memoria" aria-controls="vm-memoria" aria-selected="true"><span>I</span>Memoria<small>¿Qué ocurrió?</small></button>
+            <button type="button" role="tab" id="pm-inteligencia" aria-controls="vm-inteligencia" aria-selected="false" tabindex="-1"><span>II</span>Inteligencia<small>¿Qué ocurre?</small></button>
+            <button type="button" role="tab" id="pm-prevision" aria-controls="vm-prevision" aria-selected="false" tabindex="-1"><span>III</span>Previsión<small>¿Qué puede ocurrir?</small></button>
+          </div>
+          <div class="metodo__panel" id="vm-memoria" role="tabpanel" aria-labelledby="pm-memoria">
+            <div class="metodo__foto"><picture><source type="image/avif" srcset="assets/img/recorrido-1000.avif 1000w, assets/img/recorrido-1800.avif 1800w" sizes="(min-width: 1024px) 45vw, 100vw"><source type="image/webp" srcset="assets/img/recorrido-1000.webp 1000w, assets/img/recorrido-1800.webp 1800w" sizes="(min-width: 1024px) 45vw, 100vw"><img src="assets/img/recorrido-1000.jpg" width="1000" height="635" alt="Supervisor y técnico revisan planos dentro de una nave industrial" loading="lazy" decoding="async"></picture></div>
+            <div class="metodo__txt">
+              <p class="metodo__lema">Aprender de lo ocurrido para que no se repita.</p>
+              <h3>Lo que hacemos</h3>
+              <ul class="lista-marcas"><li>Revisión de registros de accidentes e incidentes</li><li>Investigación de causas con el equipo involucrado</li><li>Estadísticas de frecuencia y gravedad</li></ul>
+              <div class="entregable"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg><div><span>Entregable</span><b>Análisis de accidentabilidad y causas raíz</b></div></div>
+            </div>
+          </div>
+          <div class="metodo__panel" id="vm-inteligencia" role="tabpanel" aria-labelledby="pm-inteligencia" hidden>
+            <div class="metodo__foto"><picture><source type="image/avif" srcset="assets/img/maquina-1000.avif 1000w, assets/img/maquina-1800.avif 1800w" sizes="(min-width: 1024px) 45vw, 100vw"><source type="image/webp" srcset="assets/img/maquina-1000.webp 1000w, assets/img/maquina-1800.webp 1800w" sizes="(min-width: 1024px) 45vw, 100vw"><img src="assets/img/maquina-1000.jpg" width="1000" height="563" alt="Técnico con casco y guantes inspecciona una máquina" loading="lazy" decoding="async"></picture></div>
+            <div class="metodo__txt">
+              <p class="metodo__lema">Mirar la operación real, con pruebas a la vista.</p>
+              <h3>Lo que hacemos</h3>
+              <ul class="lista-marcas"><li>Inspecciones en planta y en obra</li><li>Diagnóstico inicial frente a la Ley 29783</li><li>Identificación de peligros por puesto (IPERC)</li></ul>
+              <div class="entregable"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg><div><span>Entregable</span><b>Línea base y matriz IPERC por puesto</b></div></div>
+            </div>
+          </div>
+          <div class="metodo__panel" id="vm-prevision" role="tabpanel" aria-labelledby="pm-prevision" hidden>
+            <div class="metodo__foto"><picture><source type="image/avif" srcset="assets/img/planta-1000.avif 1000w, assets/img/planta-1800.avif 1800w" sizes="(min-width: 1024px) 45vw, 100vw"><source type="image/webp" srcset="assets/img/planta-1000.webp 1000w, assets/img/planta-1800.webp 1800w" sizes="(min-width: 1024px) 45vw, 100vw"><img src="assets/img/planta-1000.jpg" width="1000" height="670" alt="Ingeniero con casco revisa un documento frente a una planta de procesos" loading="lazy" decoding="async"></picture></div>
+            <div class="metodo__txt">
+              <p class="metodo__lema">Decidir antes de que ocurra un accidente.</p>
+              <h3>Lo que hacemos</h3>
+              <ul class="lista-marcas"><li>Evaluación de riesgos y jerarquía de controles</li><li>Planes de emergencia y simulacros</li><li>Programa anual con metas medibles</li></ul>
+              <div class="entregable"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg><div><span>Entregable</span><b>Plan de acción priorizado y programa anual</b></div></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="seccion" id="controles" aria-labelledby="t-controles">
-      <div class="contenedor rejilla">
+
+    <section class="seccion jerarquia" id="controles" aria-labelledby="t-controles">
+      <div class="contenedor rejilla rejilla--centro">
         <div class="r-5">
           <p class="ante">Jerarquía de controles</p>
           <h2 class="titulo revela" id="t-controles">El equipo de protección es la última barrera, no la primera</h2>
-          <p class="bajada revela">No todas las medidas protegen igual. Toque cada nivel para ver cómo se aplica a un trabajo en altura.</p>
+          <p class="bajada revela">No todas las medidas protegen igual. Toque un nivel de la pirámide y elija un riesgo para ver cómo se aplica.</p>
+          <div class="pastillas" role="group" aria-label="Riesgo de ejemplo">
+            <button type="button" aria-pressed="true" data-caso="altura">Trabajo en altura</button>
+            <button type="button" aria-pressed="false" data-caso="maquinas">Máquinas</button>
+            <button type="button" aria-pressed="false" data-caso="cargas">Cargas</button>
+          </div>
           <div class="ficha detalle" id="jer-det" aria-live="polite"></div>
         </div>
         <div class="r-7">
-          <ol class="controles" id="controles-lista">
-            <li><button type="button" data-j="0" aria-pressed="true"><span class="controles__n">1</span><span class="controles__t">Eliminación</span><span class="controles__m"><i style="--e:100%"></i></span></button></li>
-            <li><button type="button" data-j="1" aria-pressed="false"><span class="controles__n">2</span><span class="controles__t">Sustitución</span><span class="controles__m"><i style="--e:80%"></i></span></button></li>
-            <li><button type="button" data-j="2" aria-pressed="false"><span class="controles__n">3</span><span class="controles__t">Controles de ingeniería</span><span class="controles__m"><i style="--e:60%"></i></span></button></li>
-            <li><button type="button" data-j="3" aria-pressed="false"><span class="controles__n">4</span><span class="controles__t">Controles administrativos</span><span class="controles__m"><i style="--e:40%"></i></span></button></li>
-            <li><button type="button" data-j="4" aria-pressed="false"><span class="controles__n">5</span><span class="controles__t">Equipo de protección personal</span><span class="controles__m"><i style="--e:20%"></i></span></button></li>
-          </ol>
-          <div class="controles__eje" aria-hidden="true"><span>Más eficaz arriba</span><span>Menos eficaz abajo</span></div>
-          <p class="nota" style="margin-top:16px">Orden de prioridad de la Ley N.&#8288;°&nbsp;29783, art. 21, y modelo de jerarquía de controles de NIOSH.</p>
+          <div class="piramide" id="piramide"></div>
+          <p class="nota" style="text-align:center">Orden de prioridad de la Ley N.&#8288;°&nbsp;29783, art. 21, y modelo de jerarquía de controles de NIOSH.</p>
         </div>
       </div>
     </section>
 
+
     <section class="seccion seccion--2" id="proceso" aria-labelledby="t-proceso">
       <div class="contenedor">
-        <div class="cabeza-seccion">
+        <div class="cabeza-seccion cabeza-seccion--centro">
           <p class="ante">Cómo trabajamos</p>
           <h2 class="titulo revela" id="t-proceso">En planta, junto a su equipo, hasta que el resultado se sostenga</h2>
         </div>
         <ol class="pasos" id="pasos">
-          <li class="paso"><h3>Diagnóstico</h3><p>Visita a planta y revisión documental: qué hay, qué falta y qué está en riesgo hoy.</p></li>
-          <li class="paso"><h3>Plan</h3><p>Prioridades ordenadas por nivel de riesgo y jerarquía de controles, con responsables y plazos.</p></li>
-          <li class="paso"><h3>Implementación</h3><p>Acompañamiento en campo, capacitación y documentos hechos para usarse, no para archivarse.</p></li>
-          <li class="paso"><h3>Seguimiento</h3><p>Indicadores, auditoría interna y mejora continua hasta que el cambio sea rutina.</p></li>
+          <li class="paso revela"><span class="paso__ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/><path d="M11 8v6M8 11h6"/></svg></span><span class="paso__n">Paso 1</span><h3>Diagnóstico</h3><p>Visita a planta y revisión documental: qué hay, qué falta y qué está en riesgo hoy.</p><div class="paso__ent"><span>Entregable</span><b>Informe de línea base</b></div></li>
+          <li class="paso revela"><span class="paso__ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></span><span class="paso__n">Paso 2</span><h3>Plan</h3><p>Prioridades ordenadas por nivel de riesgo y jerarquía de controles, con responsables y plazos.</p><div class="paso__ent"><span>Entregable</span><b>Plan de acción priorizado</b></div></li>
+          <li class="paso revela"><span class="paso__ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span><span class="paso__n">Paso 3</span><h3>Implementación</h3><p>Acompañamiento en campo, capacitación y documentos hechos para usarse, no para archivarse.</p><div class="paso__ent"><span>Entregable</span><b>Sistema documentado y equipo capacitado</b></div></li>
+          <li class="paso revela"><span class="paso__ico"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span class="paso__n">Paso 4</span><h3>Seguimiento</h3><p>Indicadores, auditoría interna y mejora continua hasta que el cambio sea rutina.</p><div class="paso__ent"><span>Entregable</span><b>Tablero de indicadores y auditoría interna</b></div></li>
         </ol>
       </div>
     </section>
 
+
     <section class="seccion" id="sectores" aria-labelledby="t-sectores">
       <div class="contenedor">
-        <div class="cabeza-seccion">
-          <p class="ante">Sectores</p>
-          <h2 class="titulo revela" id="t-sectores">Donde el riesgo forma parte de la tarea diaria</h2>
-          <p class="bajada revela">De la microempresa que necesita cumplir de forma simple a la gran industria que gestiona contratistas y auditorías exigentes.</p>
+        <div class="cabeza-seccion sectores__cab">
+          <div>
+            <p class="ante">Sectores</p>
+            <h2 class="titulo revela" id="t-sectores">Cada sector tiene su propio patrón de riesgo</h2>
+            <p class="bajada revela">Notificaciones y accidentes mortales de 2025 por actividad económica, con la forma de accidente más frecuente entre las registradas.</p>
+          </div>
+          <div class="pastillas" role="group" aria-label="Ordenar sectores">
+            <button type="button" aria-pressed="true" data-orden="total">Más notificaciones</button>
+            <button type="button" aria-pressed="false" data-orden="mortales">Más mortales</button>
+            <button type="button" aria-pressed="false" data-orden="var">Mayor alza</button>
+          </div>
         </div>
-        <ul class="sectores__lista">
-          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/altura-1000.avif 1000w, assets/img/altura-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/altura-1000.webp 1000w, assets/img/altura-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/altura-1000.jpg" width="1000" height="667" alt="Trabajadores con arnés sobre una cubierta" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Construcción</h3><p>Trabajos en altura, excavaciones e izaje.</p></div></li>
-          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/maquina-1000.avif 1000w, assets/img/maquina-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/maquina-1000.webp 1000w, assets/img/maquina-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/maquina-1000.jpg" width="1000" height="563" alt="Técnico inspecciona maquinaria" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Industria y manufactura</h3><p>Máquinas, energía peligrosa y sustancias.</p></div></li>
-          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/mina-1000.avif 1000w, assets/img/mina-1800.avif 1600w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/mina-1000.webp 1000w, assets/img/mina-1800.webp 1600w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/mina-1000.jpg" width="1000" height="562" alt="Vista aérea de una mina a tajo abierto en los Andes del Perú" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Minería y energía</h3><p>Contratistas, espacios confinados y emergencias.</p></div></li>
-          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/montacargas-1000.avif 1000w, assets/img/montacargas-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/montacargas-1000.webp 1000w, assets/img/montacargas-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/montacargas-1000.jpg" width="1000" height="667" alt="Operario conduce un montacargas" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Logística y almacenes</h3><p>Equipos móviles y manipulación de cargas.</p></div></li>
-          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/auxilios-1000.avif 1000w, assets/img/auxilios-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/auxilios-1000.webp 1000w, assets/img/auxilios-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/auxilios-1000.jpg" width="1000" height="667" alt="Trabajadores atienden a un compañero durante un simulacro" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Comercio y servicios</h3><p>Emergencias, atención al público y ergonomía.</p></div></li>
-        </ul>
+        <ul class="sectores__grid" id="sectores-grid"></ul>
+        <p class="nota" style="margin-top:20px">Fuente: MTPE, archivo anual de notificaciones 2025 y 2024 por actividad económica. La variación compara el total de notificaciones de 2025 con el de 2024.</p>
       </div>
     </section>
 
+
     <section class="seccion seccion--2" id="preguntas" aria-labelledby="t-preguntas">
       <div class="contenedor rejilla">
-        <div class="r-4">
+        <div class="r-4 faq__lado">
           <p class="ante">Preguntas frecuentes</p>
           <h2 class="titulo revela" id="t-preguntas">Respuestas breves con la norma a la mano</h2>
-          <p class="bajada revela">Para su caso concreto, escríbanos y lo revisamos con usted.</p>
+          <p class="bajada revela">Busque por palabra o filtre por tema. Para su caso concreto, escríbanos.</p>
+          <button class="btn btn--primario" type="button" data-abrir-hoja>Solicitar diagnóstico</button>
         </div>
-        <div class="r-8 faq">
-          <details><summary>¿Desde cuántos trabajadores se necesita un comité de seguridad y salud en el trabajo?</summary><p>Desde 20 trabajadores se conforma un comité paritario de SST. Con menos de 20, los trabajadores eligen a un supervisor de SST (Ley N.&#8288;°&nbsp;29783, arts. 29 y 30). Desde 20 trabajadores también es obligatorio el Reglamento Interno de SST.</p></details>
-          <details><summary>¿Cuántas capacitaciones al año exige la ley?</summary><p>No menos de cuatro capacitaciones al año en seguridad y salud en el trabajo (Ley N.&#8288;°&nbsp;29783, art. 35, literal b), registradas en el registro de inducción, capacitación, entrenamiento y simulacros.</p></details>
-          <details><summary>¿Cada cuánto deben hacerse los exámenes médicos ocupacionales?</summary><p>Cada dos años, a cargo del empleador. En actividades de alto riesgo se hacen antes, durante y al término de la relación laboral; el examen de salida es facultativo (Ley N.&#8288;°&nbsp;29783, art. 49, literal d, modificado por la Ley N.&#8288;°&nbsp;30222).</p></details>
-          <details><summary>¿Qué registros debe llevar una empresa?</summary><p>Ocho registros: accidentes, enfermedades e incidentes; exámenes médicos; monitoreo de agentes; inspecciones internas; estadísticas; equipos de seguridad o emergencia; inducción, capacitación y simulacros; y auditorías (Reglamento, art. 33). Las micro y pequeñas empresas pueden usar el sistema simplificado de la R. M. N.&#8288;°&nbsp;085-2013-TR.</p></details>
-          <details><summary>¿Cuánto tiempo hay que conservar los registros?</summary><p>Veinte años los de enfermedades ocupacionales, diez años los de accidentes e incidentes peligrosos y cinco años los demás (Reglamento, art. 35).</p></details>
-          <details><summary>¿Cada cuánto se audita el sistema de gestión?</summary><p>Cada dos años si hay actividades de alto riesgo y cada tres en los demás casos. Con hasta diez trabajadores y sin alto riesgo, solo cuando la Inspección del Trabajo lo dispone. La auditoría la hace un auditor independiente registrado ante el MTPE.</p></details>
-          <details><summary>¿Qué consecuencias tiene incumplir la normativa?</summary><p>Multas de SUNAFIL según la gravedad, el tamaño de la empresa y los trabajadores afectados. Además, el art. 168-A del Código Penal sanciona a quien infringe deliberadamente las normas de seguridad y pone en peligro grave la vida o la salud de los trabajadores, con pena de uno a cuatro años; de cuatro a ocho si hay muerte y de tres a seis si hay lesiones graves.</p></details>
+        <div class="r-8">
+          <div class="faq__herr">
+            <label class="buscador"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Buscar en las preguntas</span><input type="search" id="faq-buscar" placeholder="Buscar, por ejemplo: comité, exámenes, multas"></label>
+            <div class="pastillas" role="group" aria-label="Tema">
+              <button type="button" aria-pressed="true" data-faq="Todas">Todas</button>
+              <button type="button" aria-pressed="false" data-faq="Organización">Organización</button>
+              <button type="button" aria-pressed="false" data-faq="Personas">Personas</button>
+              <button type="button" aria-pressed="false" data-faq="Registros">Registros</button>
+              <button type="button" aria-pressed="false" data-faq="Sanciones">Sanciones</button>
+            </div>
+          </div>
+          <div class="faq" id="faq">
+          <details data-cat="Organización"><summary><span class="faq__cat">Organización</span>¿Desde cuántos trabajadores se necesita un comité de seguridad y salud en el trabajo?</summary><p>Desde 20 trabajadores se conforma un comité paritario de SST, de 4 a 12 miembros, que se reúne una vez al mes. Con menos de 20, los trabajadores eligen a un supervisor de SST (Ley N.&#8288;°&nbsp;29783, arts. 29 y 30; Reglamento, arts. 38, 39, 43 y 68).</p></details>
+          <details data-cat="Organización"><summary><span class="faq__cat">Organización</span>¿Cuándo es obligatorio el Reglamento Interno de SST?</summary><p>Cuando la empresa tiene 20 o más trabajadores (Ley N.&#8288;°&nbsp;29783, art. 34). Su contenido mínimo está en el art. 74 del Reglamento y se entrega una copia a cada trabajador (Ley, art. 35, literal a; Reglamento, art. 75).</p></details>
+          <details data-cat="Personas"><summary><span class="faq__cat">Personas</span>¿Cuántas capacitaciones al año exige la ley?</summary><p>No menos de cuatro capacitaciones al año en seguridad y salud en el trabajo, dentro de la jornada laboral (Ley N.&#8288;°&nbsp;29783, arts. 27 y 35, literal b; Reglamento, art. 28).</p></details>
+          <details data-cat="Personas"><summary><span class="faq__cat">Personas</span>¿Cada cuánto deben hacerse los exámenes médicos ocupacionales?</summary><p>Cada dos años, a cargo del empleador. En actividades de alto riesgo se hacen antes, durante y al término de la relación laboral. El examen de salida solo es obligatorio si el trabajador lo pide por escrito (Ley N.&#8288;°&nbsp;29783, art. 49, literal d, modificado por las Leyes N.&#8288;°&nbsp;30222 y N.&#8288;°&nbsp;31246; Reglamento, art. 101).</p></details>
+          <details data-cat="Personas"><summary><span class="faq__cat">Personas</span>¿Quién paga los equipos de protección personal?</summary><p>El empleador, en su totalidad. Los equipos deben ser adecuados al riesgo y cumplir las normas técnicas peruanas (Ley N.&#8288;°&nbsp;29783, art. 60, modificado por la Ley N.&#8288;°&nbsp;31246).</p></details>
+          <details data-cat="Registros"><summary><span class="faq__cat">Registros</span>¿Qué registros debe llevar una empresa?</summary><p>Ocho registros: accidentes, enfermedades e incidentes; exámenes médicos; monitoreo de agentes; inspecciones internas; estadísticas; equipos de seguridad o emergencia; inducción, capacitación y simulacros; y auditorías (Reglamento, art. 33). Las micro y pequeñas empresas pueden usar el sistema simplificado de la R. M. N.&#8288;°&nbsp;085-2013-TR.</p></details>
+          <details data-cat="Registros"><summary><span class="faq__cat">Registros</span>¿Cuánto tiempo hay que conservar los registros?</summary><p>Veinte años los de enfermedades ocupacionales, diez años los de accidentes e incidentes peligrosos y cinco años los demás (Reglamento, art. 35).</p></details>
+          <details data-cat="Registros"><summary><span class="faq__cat">Registros</span>¿Quién notifica los accidentes al Ministerio de Trabajo y en qué plazo?</summary><p>El empleador notifica los accidentes mortales y los incidentes peligrosos dentro de las 24 horas. Los accidentes no mortales los notifica el centro médico asistencial hasta el último día hábil del mes siguiente, y las enfermedades ocupacionales, también el centro médico, dentro de los cinco días hábiles de conocido el diagnóstico (Reglamento, art. 110).</p></details>
+          <details data-cat="Sanciones"><summary><span class="faq__cat">Sanciones</span>¿Cada cuánto se audita el sistema de gestión?</summary><p>Cada dos años si hay actividades de alto riesgo y cada tres en los demás casos. Con hasta diez trabajadores y sin alto riesgo, solo cuando la Inspección del Trabajo lo dispone. La hace un auditor independiente registrado ante el MTPE (D. S. N.&#8288;°&nbsp;014-2013-TR, art. 15).</p></details>
+          <details data-cat="Sanciones"><summary><span class="faq__cat">Sanciones</span>¿Qué consecuencias tiene incumplir la normativa?</summary><p>Multas de SUNAFIL según la gravedad, el tamaño de la empresa y los trabajadores afectados, con un tope de 300 UIT por el total. Un accidente mortal por incumplimiento puede además sancionarse con cierre temporal. En lo penal, el art. 168-A del Código Penal sanciona a quien infringe deliberadamente las normas de seguridad y pone en peligro grave la vida o la salud de los trabajadores: de uno a cuatro años de pena; de cuatro a ocho si hay muerte y de tres a seis si hay lesiones graves.</p></details>
+          </div>
+          <p class="faq__vacio" id="faq-vacio" hidden>No hay preguntas con esa palabra. Pruebe con otra o escríbanos.</p>
         </div>
       </div>
     </section>
@@ -452,26 +560,25 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <div class="pie__cols">
-        <div>
+      <div class="pie__fila">
+        <div class="pie__marca">
           <img class="pie__logo logo-claro-pie" src="assets/logos/Horizontal%20a%20color.svg" alt="Prudentia Safe" width="720" height="200" loading="lazy">
           <img class="pie__logo logo-oscuro" src="assets/logos/Horizontal%20monocromo%20blanco.svg" alt="Prudentia Safe" width="720" height="200" loading="lazy">
-          <p>Consultora peruana de seguridad y salud en el trabajo. Del cumplimiento normativo a la cultura preventiva.</p>
+          <span>Seguridad que trasciende</span>
         </div>
-        <nav aria-label="Enlaces del pie">
-          <h2>Secciones</h2>
-          <ul><li><a href="#cifras">Cifras</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#ley">Lo que exige la ley</a></li><li><a href="#autodiagnostico">Autodiagnóstico</a></li><li><a href="#multas">Calculadora de multas</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li></ul>
+        <nav class="pie__nav" aria-label="Enlaces del pie">
+          <a href="#cifras">Cifras</a><a href="#servicios">Servicios</a><a href="#autodiagnostico">Autodiagnóstico</a><a href="#multas">Multas</a><a href="investigacion.html">Investigación</a><a href="privacidad.html">Privacidad</a>
         </nav>
-        <div>
-          <h2>Prudentia Safe S.A.C.</h2>
-          <ul><li><a href="mailto:contacto@prudentiasafe.com">contacto@prudentiasafe.com</a></li><li>Lima, Perú</li><li><a href="privacidad.html">Aviso de privacidad</a></li></ul>
-        </div>
+        <a class="pie__correo" href="mailto:contacto@prudentiasafe.com">contacto@prudentiasafe.com</a>
       </div>
-      <p class="creditos">Fotografías y videos con licencia de Envato Elements: Pressmaster, wosunan, NewJadsada, StreetOncamara, AlexVog, FoToArtist_1, Wavebreakmedia, PerfectAngleImages, prathanchorruangsak, LightFieldStudios y BlackBoxGuild. Datos: MTPE, OIT, Ley N.&#8288;°&nbsp;29783 y normas citadas en cada sección.</p>
       <div class="pie__inf">
-        <span>© 2026 Prudentia Safe S.A.C.</span>
+        <span>© 2026 Prudentia Safe S.A.C. · Lima, Perú</span>
+        <details class="creditos">
+          <summary>Créditos y fuentes</summary>
+          <p>Fotografías y videos con licencia de Envato Elements: Pressmaster, wosunan, NewJadsada, StreetOncamara, AlexVog, FoToArtist_1, Wavebreakmedia, PerfectAngleImages, prathanchorruangsak, LightFieldStudios, BlackBoxGuild, guyswhoshoot y otros autores de la plataforma. Datos: MTPE (SAT), OIT, Ley N.&#8288;°&nbsp;29783 y las normas citadas en cada sección.</p>
+        </details>
         <div class="tema" role="group" aria-label="Apariencia">
-          <button type="button" data-tema="auto" aria-pressed="true">Automático</button>
+          <button type="button" data-tema="auto" aria-pressed="true">Auto</button>
           <button type="button" data-tema="light" aria-pressed="false">Claro</button>
           <button type="button" data-tema="dark" aria-pressed="false">Oscuro</button>
         </div>
@@ -504,6 +611,7 @@
     </div>
   </div>
 
-  <script src="assets/js/app.js?v=3" defer></script>
+  <script src="assets/js/datos.js?v=4" defer></script>
+  <script src="assets/js/app.js?v=4" defer></script>
 </body>
 </html>
