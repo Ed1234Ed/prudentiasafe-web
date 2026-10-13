@@ -2,12 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Prudentia Safe | Consultoría en seguridad y salud en el trabajo</title>
-  <meta name="description" content="Consultora peruana de seguridad y salud en el trabajo: consultoría, capacitación, implementación del SG-SST conforme a la Ley N.° 29783 y equipos de protección personal para empresas de todo tamaño.">
+  <meta name="description" content="Consultora peruana de seguridad y salud en el trabajo. Consultoría, capacitación, implementación del SG-SST conforme a la Ley N.° 29783 y equipos de protección personal. Cifras del MTPE, autodiagnóstico y calculadora de multas.">
   <link rel="canonical" href="https://prudentiasafe.com/">
-  <meta name="theme-color" content="#5A1E27">
-
+  <meta name="theme-color" content="#2A2727">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_PE">
   <meta property="og:site_name" content="Prudentia Safe">
@@ -15,490 +14,496 @@
   <meta property="og:description" content="Consultoría, capacitación, sistemas de gestión y equipos de protección para que la seguridad se vuelva un hábito de las personas y permanezca en el tiempo.">
   <meta property="og:url" content="https://prudentiasafe.com/">
   <meta property="og:image" content="https://prudentiasafe.com/assets/img/og-prudentia-safe.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Logotipo de Prudentia Safe sobre una fotografía de supervisión en obra">
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <link rel="preload" href="assets/fonts/red-hat-display-500.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/red-hat-text-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" href="assets/img/hero-inspeccion.jpg" imagesrcset="assets/img/hero-inspeccion-900.jpg 900w, assets/img/hero-inspeccion.jpg 2000w" imagesizes="100vw">
-  <link rel="stylesheet" href="assets/css/estilos.css">
-
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/supervisor-1800.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/css/sitio.css?v=3">
+  <script>(function(){try{var t=localStorage.getItem("tema");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}document.documentElement.classList.add("js");})();</script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Prudentia Safe S.A.C.",
-    "slogan": "Seguridad que trasciende",
-    "url": "https://prudentiasafe.com/",
-    "logo": "https://prudentiasafe.com/assets/logos/S%C3%ADmbolo%20a%20color.svg",
-    "image": "https://prudentiasafe.com/assets/img/og-prudentia-safe.jpg",
-    "email": "contacto@prudentiasafe.com",
-    "address": { "@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE" },
-    "areaServed": "PE"
-  }
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Prudentia Safe S.A.C.","slogan":"Seguridad que trasciende","url":"https://prudentiasafe.com/","logo":"https://prudentiasafe.com/assets/logos/S%C3%ADmbolo%20a%20color.svg","image":"https://prudentiasafe.com/assets/img/og-prudentia-safe.jpg","email":"contacto@prudentiasafe.com","address":{"@type":"PostalAddress","addressLocality":"Lima","addressCountry":"PE"},"areaServed":"PE"}
   </script>
-  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <a class="salto" href="#contenido">Saltar al contenido</a>
 
-  <header class="cabecera" id="cabecera">
-    <div class="contenedor cabecera__interior">
-      <a class="cabecera__marca" href="#inicio" aria-label="Prudentia Safe, ir al inicio">
-        <span class="logo logo--blanco"><img src="assets/logos/Horizontal%20monocromo%20blanco.svg" alt="" width="720" height="200"></span>
-        <span class="logo logo--color"><img src="assets/logos/Horizontal%20a%20color.svg" alt="" width="720" height="200"></span>
+  <header class="cab" id="cab">
+    <div class="contenedor cab__in">
+      <a class="cab__marca" href="#inicio" aria-label="Prudentia Safe, ir al inicio">
+        <img class="logo-claro" src="assets/logos/Horizontal%20monocromo%20blanco.svg" alt="" width="720" height="200">
+        <img class="logo-color" src="assets/logos/Horizontal%20a%20color.svg" alt="" width="720" height="200">
       </a>
-      <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="navegacion">
-        <span class="menu-boton__texto">Menú</span><span class="menu-boton__icono" aria-hidden="true"></span>
-      </button>
-      <nav class="nav" id="navegacion" aria-label="Navegación principal">
-        <ul class="nav__lista">
-          <li><a href="#nosotros">Nosotros</a></li>
+      <nav class="cab__nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#cifras">Cifras</a></li>
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#metodo">Método</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#ley">Lo que exige la ley</a></li>
+          <li><a href="#autodiagnostico">Autodiagnóstico</a></li>
+          <li><a href="#multas">Multas</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
         </ul>
-        <a class="boton" href="#contacto">Solicitar diagnóstico</a>
       </nav>
+      <div class="cab__acciones">
+        <button class="btn btn--cab" type="button" data-abrir-hoja>Solicitar diagnóstico</button>
+        <button class="cab__menu" id="abrir-menu" type="button" aria-label="Abrir el menú" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
     </div>
   </header>
 
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <button class="menu__cerrar" type="button" id="cerrar-menu" aria-label="Cerrar el menú"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <ul>
+      <li><a href="#cifras">Cifras</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#ley">Lo que exige la ley</a></li>
+      <li><a href="#autodiagnostico">Autodiagnóstico</a></li>
+      <li><a href="#multas">Multas</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+    </ul>
+    <button class="btn btn--primario btn--bloque" type="button" data-abrir-hoja>Solicitar diagnóstico</button>
+  </div>
+
   <main id="contenido">
-
-    <!-- Portada -->
-    <section class="portada" id="inicio" aria-labelledby="titular">
-      <div class="portada__foto">
-        <img src="assets/img/hero-inspeccion.jpg" srcset="assets/img/hero-inspeccion-900.jpg 900w, assets/img/hero-inspeccion.jpg 2000w" sizes="100vw" width="2000" height="1125" alt="Dos supervisores con casco y chaleco de alta visibilidad revisan una lista de verificación en obra" fetchpriority="high">
+    <section class="portada sobre-foto" id="inicio" aria-labelledby="titular">
+      <div class="diapos" id="carrusel" aria-roledescription="carrusel" aria-label="Escenas de trabajo seguro">
+        <div class="diapo activa" role="group" aria-roledescription="diapositiva" aria-label="1 de 5: Inspección en planta industrial" data-rotulo="Inspección en planta industrial" style="--pos-m:50% 40%;--pos-d:55% 40%"><video muted loop playsinline preload="auto" poster="assets/img/supervisor-1800.webp" aria-label="Supervisor con casco recorre la nave de una planta industrial" data-video><source src="assets/video/supervisor.mp4" type="video/mp4"></video></div>
+        <div class="diapo" role="group" aria-roledescription="diapositiva" aria-label="2 de 5: Recorrido de verificación en planta de procesos" data-rotulo="Recorrido de verificación en planta de procesos" style="--pos-m:50% 45%;--pos-d:42% 45%"><picture><source type="image/avif" srcset="assets/img/planta-1000.avif 1000w, assets/img/planta-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/planta-1000.webp 1000w, assets/img/planta-1800.webp 1800w" sizes="100vw"><img src="assets/img/planta-1000.jpg" width="1000" height="670" alt="Ingeniero con casco amarillo revisa un documento frente a una planta de procesos" fetchpriority="high" decoding="async"></picture></div>
+        <div class="diapo" role="group" aria-roledescription="diapositiva" aria-label="3 de 5: Trabajo en altura con protección contra caídas" data-rotulo="Trabajo en altura con protección contra caídas" style="--pos-m:40% 40%;--pos-d:50% 35%"><picture><source type="image/avif" srcset="assets/img/altura-1000.avif 1000w, assets/img/altura-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/altura-1000.webp 1000w, assets/img/altura-1800.webp 1800w" sizes="100vw"><img src="assets/img/altura-1000.jpg" width="1000" height="667" alt="Dos trabajadores con arnés y línea de vida caminan sobre una cubierta" loading="lazy" decoding="async"></picture></div>
+        <div class="diapo" role="group" aria-roledescription="diapositiva" aria-label="4 de 5: Charla de seguridad antes de iniciar la jornada" data-rotulo="Charla de seguridad antes de iniciar la jornada" style="--pos-m:55% 40%;--pos-d:50% 40%"><picture><source type="image/avif" srcset="assets/img/charla-1000.avif 1000w, assets/img/charla-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/charla-1000.webp 1000w, assets/img/charla-1800.webp 1800w" sizes="100vw"><img src="assets/img/charla-1000.jpg" width="1000" height="667" alt="Supervisor da una charla de seguridad a un grupo de trabajadores con casco y chaleco" loading="lazy" decoding="async"></picture></div>
+        <div class="diapo" role="group" aria-roledescription="diapositiva" aria-label="5 de 5: Tránsito de equipos móviles en almacén" data-rotulo="Tránsito de equipos móviles en almacén" style="--pos-m:45% 40%;--pos-d:50% 40%"><picture><source type="image/avif" srcset="assets/img/montacargas-1000.avif 1000w, assets/img/montacargas-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/montacargas-1000.webp 1000w, assets/img/montacargas-1800.webp 1800w" sizes="100vw"><img src="assets/img/montacargas-1000.jpg" width="1000" height="667" alt="Operario con lentes de seguridad conduce un montacargas en un almacén" loading="lazy" decoding="async"></picture></div>
       </div>
-      <div class="contenedor portada__contenido">
-        <span class="portada__antetitulo">Seguridad y salud en el trabajo · Lima, Perú</span>
+      <div class="portada__velo" aria-hidden="true"></div>
+      <div class="contenedor portada__in">
+        <span class="chip vidrio"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>Seguridad y salud en el trabajo</span>
         <h1 id="titular">Del cumplimiento normativo a la cultura preventiva.</h1>
-        <p class="portada__bajada">Consultoría, capacitación, sistemas de gestión y equipos de protección para empresas que quieren que la seguridad se vuelva un hábito de su gente y permanezca en el tiempo.</p>
+        <p class="portada__texto">Consultoría, capacitación, sistemas de gestión y equipos de protección para que la seguridad se vuelva un hábito de su gente.</p>
         <div class="portada__acciones">
-          <a class="boton" href="#contacto">Solicitar diagnóstico
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-          </a>
-          <a class="boton boton--claro" href="#metodo">Conocer el método</a>
+          <button class="btn btn--primario" type="button" data-abrir-hoja>Solicitar diagnóstico</button>
+          <a class="btn btn--vidrio" href="#autodiagnostico">Medir mi cumplimiento</a>
         </div>
-        <ul class="portada__indice" aria-label="Servicios">
-          <li><a href="#servicios"><span>01</span>Consultoría y asesoría</a></li>
-          <li><a href="#servicios"><span>02</span>Capacitación</a></li>
-          <li><a href="#servicios"><span>03</span>Implementación del SG-SST</a></li>
-          <li><a href="#servicios"><span>04</span>Equipos de protección personal</a></li>
+      </div>
+      <div class="carrusel-ctrl">
+        <div class="contenedor">
+          <div class="avances" id="avances" role="group" aria-label="Elegir escena">
+            <button type="button" aria-label="Ver escena 1: Inspección en planta industrial"><span></span></button>
+            <button type="button" aria-label="Ver escena 2: Recorrido de verificación en planta de procesos"><span></span></button>
+            <button type="button" aria-label="Ver escena 3: Trabajo en altura con protección contra caídas"><span></span></button>
+            <button type="button" aria-label="Ver escena 4: Charla de seguridad antes de iniciar la jornada"><span></span></button>
+            <button type="button" aria-label="Ver escena 5: Tránsito de equipos móviles en almacén"><span></span></button>
+          </div>
+          <p class="rotulo" id="rotulo" aria-live="polite">Inspección en planta industrial</p>
+          <div class="ctrl-btns">
+            <button class="vidrio" type="button" id="anterior" aria-label="Escena anterior"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button>
+            <button class="vidrio" type="button" id="pausa" aria-label="Pausar el carrusel" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+            <button class="vidrio" type="button" id="siguiente" aria-label="Escena siguiente"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="compromisos" aria-label="Nuestros compromisos">
+      <div class="contenedor">
+        <ul class="compromisos__lista">
+          <li class="tarjeta revela"><span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><path d="M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg></span><h3>Rigor técnico</h3><p>Cada recomendación se apoya en la Ley N.&#8288;°&nbsp;29783, su reglamento y en pruebas verificables.</p></li>
+          <li class="tarjeta revela"><span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18"/><path d="M5 17v-2a7 7 0 0 1 14 0v2"/><path d="M12 8V5"/><path d="M9 9.5 8 6.5"/><path d="M15 9.5l1-3"/></svg></span><h3>En planta, junto a su equipo</h3><p>Trabajo en campo hasta que el resultado se sostenga, no solo en el escritorio.</p></li>
+          <li class="tarjeta revela"><span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-14.3 4.9"/><path d="M4 12a8 8 0 0 1 14.3-4.9"/><path d="M18.5 3.5v3.8h-3.8"/><path d="M5.5 20.5v-3.8h3.8"/></svg></span><h3>Del diagnóstico al EPP</h3><p>Un solo equipo responsable de la consultoría, la capacitación y los equipos.</p></li>
         </ul>
       </div>
     </section>
 
-    <!-- Nosotros -->
+    <section class="seccion cifras" id="cifras" aria-labelledby="t-cifras">
+      <div class="contenedor">
+        <div class="cabeza-seccion">
+          <p class="ante">El punto de partida</p>
+          <h2 class="titulo revela" id="t-cifras">En el Perú se notifica un accidente de trabajo cada 12 minutos</h2>
+          <p class="bajada revela">En 2025 las empresas notificaron al Ministerio de Trabajo 43&nbsp;978 accidentes de trabajo. Cada número es una persona que salió a trabajar y una familia que la esperaba de vuelta.</p>
+        </div>
+        <ul class="cifras__lista">
+          <li class="tarjeta cifra revela"><strong data-contar="44602">44&nbsp;602</strong><span>notificaciones en 2025, 14,7 % más que en 2024 y la cifra más alta desde 2011</span></li>
+          <li class="tarjeta cifra revela"><strong class="acento" data-contar="228">228</strong><span>accidentes mortales: uno cada 38 horas</span></li>
+          <li class="tarjeta cifra revela"><strong data-contar="494">494</strong><span>incidentes peligrosos que pudieron terminar en una tragedia</span></li>
+          <li class="tarjeta cifra revela"><strong data-contar="88" data-sufijo=" %">88 %</strong><span>de las notificaciones vienen de empresas con sede en Lima y Callao</span></li>
+        </ul>
+        <p class="nota">Fuente: Ministerio de Trabajo y Promoción del Empleo, boletín estadístico de notificaciones de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales, diciembre de 2025.</p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--2" id="datos" aria-labelledby="t-datos">
+      <div class="contenedor">
+        <div class="cabeza-seccion">
+          <p class="ante">Dónde y cómo ocurren</p>
+          <h2 class="titulo revela" id="t-datos">Los accidentes se repiten en los mismos lugares</h2>
+          <p class="bajada revela">Conocer el patrón es el primer paso para cortarlo. Explore los datos oficiales por año, sector, forma del accidente y parte del cuerpo.</p>
+        </div>
+        <div class="pestanas" role="tablist" aria-label="Vista de los datos">
+          <button type="button" role="tab" id="p-anual" aria-controls="v-anual" aria-selected="true">Evolución 2019 a 2025</button>
+          <button type="button" role="tab" id="p-sector" aria-controls="v-sector" aria-selected="false" tabindex="-1">Por sector</button>
+          <button type="button" role="tab" id="p-forma" aria-controls="v-forma" aria-selected="false" tabindex="-1">Por forma del accidente</button>
+          <button type="button" role="tab" id="p-cuerpo" aria-controls="v-cuerpo" aria-selected="false" tabindex="-1">Por parte del cuerpo</button>
+        </div>
+
+        <div class="panel tarjeta" id="v-anual" role="tabpanel" aria-labelledby="p-anual">
+          <div class="grafico__cab">
+            <h3 id="grafico-titulo">Notificaciones totales por año</h3>
+            <div class="pastillas" role="group" aria-label="Serie del gráfico">
+              <button type="button" aria-pressed="true" data-serie="total">Total</button>
+              <button type="button" aria-pressed="false" data-serie="mortales">Mortales</button>
+              <button type="button" aria-pressed="false" data-serie="incidentes">Incidentes peligrosos</button>
+            </div>
+          </div>
+          <div class="grafico__lienzo" id="grafico"></div>
+          <p class="nota">En 2020 la caída coincide con la paralización de actividades por la emergencia sanitaria. Las cifras corresponden a lo que las empresas notifican; el MTPE actualiza su serie histórica.</p>
+        </div>
+
+        <div class="panel tarjeta" id="v-sector" role="tabpanel" aria-labelledby="p-sector" hidden>
+          <div class="panel__dos">
+            <div>
+              <div class="pastillas" role="group" aria-label="Tipo de notificación">
+                <button type="button" aria-pressed="true" data-sector="total">Todas las notificaciones</button>
+                <button type="button" aria-pressed="false" data-sector="mortales">Solo mortales</button>
+              </div>
+              <ol class="barras" id="barras-sector"></ol>
+            </div>
+            <figure>
+              <div class="foto-redonda"><picture><source type="image/avif" srcset="assets/img/montacargas-1000.avif 1000w, assets/img/montacargas-1800.avif 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><source type="image/webp" srcset="assets/img/montacargas-1000.webp 1000w, assets/img/montacargas-1800.webp 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><img src="assets/img/montacargas-1000.jpg" width="1000" height="667" alt="Operario con lentes de seguridad conduce un montacargas en un almacén" loading="lazy" decoding="async"></picture></div>
+              <figcaption>Manufactura reúne casi una de cada cinco notificaciones. En los accidentes mortales lidera el transporte y almacenamiento, donde un error con un vehículo o una carga suele ser irreversible.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="panel tarjeta" id="v-forma" role="tabpanel" aria-labelledby="p-forma" hidden>
+          <div class="panel__dos">
+            <ol class="barras" id="barras-forma"></ol>
+            <figure>
+              <div class="foto-redonda"><picture><source type="image/avif" srcset="assets/img/altura-1000.avif 1000w, assets/img/altura-1800.avif 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><source type="image/webp" srcset="assets/img/altura-1000.webp 1000w, assets/img/altura-1800.webp 1800w" sizes="(min-width: 1024px) 40vw, 100vw"><img src="assets/img/altura-1000.jpg" width="1000" height="667" alt="Dos trabajadores con arnés y línea de vida caminan sobre una cubierta" loading="lazy" decoding="async"></picture></div>
+              <figcaption>Las caídas de personas encabezan la lista: casi un tercio de los accidentes no mortales con forma registrada. La mayoría se previene con orden, iluminación y protección en los bordes.</figcaption>
+            </figure>
+          </div>
+          <p class="nota">Porcentajes sobre los 24&nbsp;594 accidentes no mortales con forma registrada en 2025. Otros 19&nbsp;156 figuran sin clasificar por falta de datos.</p>
+        </div>
+
+        <div class="panel tarjeta" id="v-cuerpo" role="tabpanel" aria-labelledby="p-cuerpo" hidden>
+          <div class="cuerpo">
+            <div class="figura" id="figura">
+              <picture><source type="image/avif" srcset="assets/img/cuerpo.avif"><source type="image/webp" srcset="assets/img/cuerpo.webp"><img src="assets/img/cuerpo.jpg" width="660" height="1574" alt="Trabajador de pie con casco, chaleco reflectivo y guantes, visto de frente" loading="lazy"></picture>
+            </div>
+            <div class="cuerpo__panel" id="cuerpo-panel" aria-live="polite"></div>
+            <div class="cuerpo__lista" id="cuerpo-lista" role="group" aria-label="Partes del cuerpo"></div>
+          </div>
+          <p class="nota">Porcentajes sobre los 43&nbsp;750 accidentes no mortales de 2025. Las lesiones en ubicaciones múltiples suman 6,8 % y no se muestran en la figura.</p>
+        </div>
+        <p class="nota" style="margin-top:20px">Elaboración propia con base en los boletines mensuales de notificaciones del MTPE, enero a diciembre de 2025.</p>
+      </div>
+    </section>
+
     <section class="seccion" id="nosotros" aria-labelledby="t-nosotros">
-      <div class="contenedor">
-        <div class="reticula">
-          <div class="nosotros__cabeza aparece">
-            <span class="antetitulo"><span>01</span>Nosotros</span>
-            <h2 class="titulo-seccion" id="t-nosotros">Una consultora peruana que forma criterio, no solo documentos.</h2>
+      <div class="contenedor rejilla rejilla--centro">
+        <div class="r-5">
+          <p class="ante">Quiénes somos</p>
+          <h2 class="titulo revela" id="t-nosotros">Prudente es quien ve antes</h2>
+          <div class="etimo revela" aria-label="Prudentia viene de pro, antes, y videre, ver">
+            <span><b>pro</b><small>antes</small></span><i>+</i><span><b>videre</b><small>ver</small></span><i>=</i><span class="igual"><b>prudentia</b><small>quien ve antes</small></span>
           </div>
-          <div class="nosotros__cuerpo aparece">
-            <p class="lectura">Prudentia Safe S.A.C. es una consultora peruana de seguridad y salud en el trabajo. Acompaña a micro, pequeñas, medianas y grandes empresas con consultoría, capacitación, implementación del sistema de gestión de la seguridad y salud en el trabajo (SG-SST) y provisión de equipos de protección personal (EPP).</p>
-            <p class="texto-suave">Su propósito es que la seguridad y la salud en el trabajo dejen de ser una obligación documental y formen parte de la manera de trabajar de cada organización.</p>
+          <p class="bajada revela">Prudentia es la palabra latina para prudencia, la primera de las virtudes cardinales. Prudente es quien se adelanta a lo que puede pasar y actúa a tiempo. En el trabajo, eso se llama prevención.</p>
+          <p class="bajada revela">Prudentia Safe S.A.C. es una consultora peruana que acompaña a micro, pequeñas, medianas y grandes empresas para que la seguridad se vuelva un hábito de las personas y permanezca en el tiempo.</p>
+          <div class="marca-simbolo revela">
+            <img src="assets/logos/S%C3%ADmbolo%20a%20color.svg" alt="" width="158" height="160" loading="lazy">
+            <p>Nuestro símbolo: una persona protegida por dos brazos. La persona lleva el oro viejo porque es lo más valioso de cualquier operación.</p>
           </div>
         </div>
-
-        <ul class="diferenciales">
-          <li class="aparece">
-            <h3>Rigor técnico</h3>
-            <p>Cada recomendación se basa en la Ley N.° 29783, su reglamento y en pruebas verificables.</p>
-          </li>
-          <li class="aparece">
-            <h3>Cercanía</h3>
-            <p>Trabajo en planta, junto al equipo del cliente, hasta que el resultado se sostenga.</p>
-          </li>
-          <li class="aparece">
-            <h3>Oferta integral</h3>
-            <p>Del diagnóstico al equipo de protección, con un solo equipo responsable.</p>
-          </li>
-          <li class="aparece">
-            <h3>Enfoque formativo</h3>
-            <p>Forma criterio en las personas, no se limita a entregar documentos.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Por qué Prudentia -->
-    <section class="seccion seccion--lino" id="ver-antes" aria-labelledby="t-ver-antes">
-      <div class="contenedor reticula">
-        <div class="ver-antes__texto aparece">
-          <span class="antetitulo"><span>02</span>Por qué Prudentia</span>
-          <h2 class="titulo-seccion" id="t-ver-antes">Prudente es quien ve antes.</h2>
-          <p class="lectura" style="margin-top:1.8rem">Prudentia es la palabra latina para prudencia, la primera de las cuatro virtudes cardinales. Prudente es, literalmente, quien se adelanta a lo que puede pasar y actúa a tiempo. Es lo que hoy, en el trabajo, se llama prevención.</p>
-        </div>
-        <dl class="etimologia ver-antes__etimologia aparece">
-          <dt lang="la">pro</dt><dd><strong>antes</strong></dd>
-          <dt lang="la">videre</dt><dd><strong>ver</strong></dd>
-          <dt lang="la">providentia</dt><dd>del verbo <em lang="la">providere</em>, origen de <em lang="la">prudentia</em></dd>
-        </dl>
-      </div>
-
-      <figure class="ver-antes__foto cita-figura" aria-labelledby="cita-autor">
-        <img src="assets/img/ver-antes.jpg" srcset="assets/img/ver-antes-900.jpg 900w, assets/img/ver-antes.jpg 1700w" sizes="100vw" width="1700" height="956" loading="lazy" alt="Dos trabajadores con casco y chaleco observan el avance de una obra, de espaldas a la cámara">
-        <figcaption class="cita contenedor">
-          <blockquote lang="la"><p>"Prudens, quasi porro videns."</p></blockquote>
-          <div id="cita-autor">Prudente, como quien ve a lo lejos.<span>San Isidoro de Sevilla</span></div>
-        </figcaption>
-      </figure>
-
-      <div class="contenedor reticula ver-antes__cierre">
-        <p class="lectura aparece">Prudentia nombra la virtud y el criterio. Safe nombra su resultado: un trabajo seguro.</p>
-        <div class="simbolo aparece">
-          <img src="assets/logos/S%C3%ADmbolo%20a%20color.svg" alt="Símbolo de Prudentia Safe" width="158" height="160" loading="lazy">
-          <div>
-            <h3>El símbolo</h3>
-            <p>Una persona protegida por dos brazos que la rodean: la seguridad entendida como cuidado. La persona está al centro y lleva el oro viejo porque es lo más valioso de cualquier operación.</p>
-          </div>
+        <div class="r-7">
+          <div class="foto-alta revela"><picture><source type="image/avif" srcset="assets/img/mirada-1000.avif 1000w, assets/img/mirada-1800.avif 1800w" sizes="(min-width: 1024px) 55vw, 100vw"><source type="image/webp" srcset="assets/img/mirada-1000.webp 1000w, assets/img/mirada-1800.webp 1800w" sizes="(min-width: 1024px) 55vw, 100vw"><img src="assets/img/mirada-1000.jpg" width="1000" height="750" alt="Trabajador con casco rojo y protectores auditivos observa con atención su área de trabajo" loading="lazy" decoding="async"></picture></div>
         </div>
       </div>
     </section>
 
-    <!-- Servicios -->
-    <section class="seccion" id="servicios" aria-labelledby="t-servicios">
+    <section class="seccion foto-fondo sobre-foto" id="servicios" aria-labelledby="t-servicios">
+      <picture><source type="image/avif" srcset="assets/img/recorrido-1000.avif 1000w, assets/img/recorrido-1800.avif 1800w" sizes="100vw"><source type="image/webp" srcset="assets/img/recorrido-1000.webp 1000w, assets/img/recorrido-1800.webp 1800w" sizes="100vw"><img src="assets/img/recorrido-1000.jpg" width="1000" height="635" alt="" loading="lazy" decoding="async"></picture>
+      <div class="foto-fondo__velo" aria-hidden="true"></div>
       <div class="contenedor">
-        <div class="cabeza-seccion aparece">
-          <div>
-            <span class="antetitulo"><span>03</span>Servicios</span>
-            <h2 class="titulo-seccion" id="t-servicios">Del diagnóstico al equipo de protección.</h2>
-          </div>
-          <p>Cuatro líneas de trabajo que pueden contratarse por separado o integrarse en un mismo acompañamiento, con entregables concretos en cada etapa.</p>
+        <div class="cabeza-seccion">
+          <p class="ante">Servicios</p>
+          <h2 class="titulo revela" id="t-servicios">Del diagnóstico al equipo de protección, con un solo responsable</h2>
+          <p class="bajada revela">Cuatro líneas de trabajo que se combinan según el tamaño y el riesgo de cada operación.</p>
         </div>
+        <div class="modulos">
+          <article class="modulo vidrio revela"><h3>Consultoría y asesoría</h3><p>Diagnóstico preciso y recomendaciones que la organización puede ejecutar con sus propios recursos.</p><ul><li>Diagnóstico inicial o línea base</li><li>Matriz IPERC por puesto de trabajo</li><li>Plan de acción priorizado por riesgo</li></ul></article>
+          <article class="modulo vidrio revela"><h3>Capacitación</h3><p>Formación práctica sobre situaciones reales del puesto, que se convierte en hábito y no solo en una constancia.</p><ul><li>Programa anual de capacitación</li><li>Altura, espacios confinados, bloqueo y etiquetado</li><li>Certificados con código de verificación</li></ul></article>
+          <article class="modulo vidrio revela"><h3>Implementación del SG-SST</h3><p>Un sistema a la medida de la operación real, conforme a la Ley N.&#8288;°&nbsp;29783, que se sostiene después de la auditoría.</p><ul><li>Política, programa anual y procedimientos</li><li>Registros obligatorios y comité o supervisor</li><li>Auditoría interna y revisión por la dirección</li></ul></article>
+          <article class="modulo vidrio revela"><h3>Equipos de protección personal</h3><p>El equipo correcto para cada riesgo, elegido con criterio técnico y no por catálogo.</p><ul><li>Matriz de EPP por puesto</li><li>Provisión de equipos certificados</li><li>Entrenamiento en uso y control de reposición</li></ul></article>
+        </div>
+      </div>
+    </section>
 
-        <div class="servicios">
-          <article class="servicio aparece">
-            <div class="servicio__foto"><img src="assets/img/hero-supervision-900.jpg" srcset="assets/img/hero-supervision-900.jpg 900w, assets/img/hero-supervision.jpg 2000w" sizes="(max-width: 920px) 100vw, 50vw" width="900" height="506" loading="lazy" alt="Supervisor con casco señala un punto de la obra mientras conversa con su equipo" style="object-position:72% 50%"></div>
-            <div class="servicio__titulo"><span>01</span><h3>Consultoría y asesoría</h3></div>
-            <p>Diagnóstico preciso y recomendaciones que la organización puede ejecutar con sus propios recursos.</p>
-            <div class="entregables-lista">
-              <h4>Entregables</h4>
-              <ul>
-                <li>Diagnóstico inicial (línea base)</li>
-                <li>Matriz IPERC</li>
-                <li>Informe de lo que falta cumplir</li>
-                <li>Plan de acción priorizado</li>
-              </ul>
+    <section class="seccion" id="ley" aria-labelledby="t-ley">
+      <div class="contenedor">
+        <div class="cabeza-seccion">
+          <p class="ante">Lo que exige la ley</p>
+          <h2 class="titulo revela" id="t-ley">Qué le exige la Ley N.&#8288;°&nbsp;29783 a su empresa</h2>
+          <p class="bajada revela">Las obligaciones cambian con el número de trabajadores, el tamaño de la empresa y el riesgo de la actividad. Ajuste los datos y la lista se actualiza.</p>
+        </div>
+        <div class="rejilla">
+          <form class="r-4 tarjeta mandos" id="ley-form" onsubmit="return false" aria-label="Datos de su empresa">
+            <div class="mando">
+              <label for="ley-n">Número de trabajadores</label>
+              <output id="ley-n-v" for="ley-n" class="tnum">25</output>
+              <input type="range" id="ley-n" min="1" max="500" value="25" step="1">
+              <div class="escala" aria-hidden="true"><span>1</span><span>250</span><span>500 o más</span></div>
             </div>
-          </article>
-
-          <article class="servicio aparece">
-            <div class="servicio__foto"><img src="assets/img/capacitacion-900.jpg" srcset="assets/img/capacitacion-900.jpg 900w, assets/img/capacitacion.jpg 2000w" sizes="(max-width: 920px) 100vw, 50vw" width="900" height="600" loading="lazy" alt="Tres personas con casco y chaleco de alta visibilidad conversan durante una jornada de capacitación en exteriores"></div>
-            <div class="servicio__titulo"><span>02</span><h3>Capacitación</h3></div>
-            <p>Formación práctica sobre situaciones reales del puesto, que se convierte en hábito y no solo en una constancia.</p>
-            <div class="entregables-lista entregables-lista--una">
-              <h4>Entregables</h4>
-              <ul>
-                <li>Programa anual de capacitación</li>
-                <li>Cursos por riesgo: trabajos en altura, espacios confinados, bloqueo y etiquetado, manejo de sustancias, primeros auxilios y respuesta a emergencias</li>
-                <li>Evaluación de conducta segura</li>
-                <li>Certificados con código de verificación</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="servicio aparece">
-            <div class="servicio__foto"><img src="assets/img/equipo-900.jpg" srcset="assets/img/equipo-900.jpg 900w, assets/img/equipo.jpg 2000w" sizes="(max-width: 920px) 100vw, 50vw" width="900" height="600" loading="lazy" alt="Equipo de trabajadores con chalecos de alta visibilidad y cascos, abrazados de espaldas en una obra"></div>
-            <div class="servicio__titulo"><span>03</span><h3>Implementación del SG-SST</h3></div>
-            <p>Un sistema a la medida de la operación real, que se sostiene después de la auditoría, conforme a la Ley N.° 29783 y su reglamento (D. S. N.° 005-2012-TR).</p>
-            <div class="entregables-lista">
-              <h4>Entregables</h4>
-              <ul>
-                <li>Política de seguridad y salud</li>
-                <li>Procedimientos</li>
-                <li>Registros obligatorios</li>
-                <li>Comité o supervisor de SST</li>
-                <li>Auditoría interna</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="servicio aparece">
-            <div class="servicio__foto"><img src="assets/img/trabajador-epp-900.jpg" srcset="assets/img/trabajador-epp-900.jpg 900w, assets/img/trabajador-epp.jpg 1400w" sizes="(max-width: 920px) 100vw, 50vw" width="900" height="1125" loading="lazy" alt="Trabajador con casco, protección auditiva, lentes y guantes manipula un tubo metálico" style="object-position:50% 30%"></div>
-            <div class="servicio__titulo"><span>04</span><h3>Equipos de protección personal</h3></div>
-            <p>El equipo correcto para cada riesgo, seleccionado con criterio técnico.</p>
-            <div class="entregables-lista">
-              <h4>Entregables</h4>
-              <ul>
-                <li>Matriz de EPP por puesto</li>
-                <li>Provisión de equipos</li>
-                <li>Entrenamiento en uso correcto</li>
-                <li>Control de reposición</li>
-              </ul>
-            </div>
-          </article>
+            <fieldset class="mando">
+              <legend>Tamaño de la empresa</legend>
+              <div class="chips">
+                <label><input type="radio" name="ley-t" value="micro"><span>Micro</span></label>
+                <label><input type="radio" name="ley-t" value="pequena"><span>Pequeña</span></label>
+                <label><input type="radio" name="ley-t" value="nomype" checked><span>No MYPE</span></label>
+              </div>
+              <p class="ayuda">MYPE: micro y pequeña empresa inscrita en el REMYPE. No MYPE: mediana o gran empresa.</p>
+            </fieldset>
+            <fieldset class="mando">
+              <legend>¿Realiza actividades de alto riesgo?</legend>
+              <div class="chips">
+                <label><input type="radio" name="ley-r" value="si"><span>Sí</span></label>
+                <label><input type="radio" name="ley-r" value="no" checked><span>No</span></label>
+              </div>
+              <p class="ayuda">Por ejemplo construcción, minería o trabajos en altura, según el Anexo 5 del D. S. N.&#8288;°&nbsp;009-97-SA.</p>
+            </fieldset>
+          </form>
+          <div class="r-8">
+            <ol class="obligaciones" id="obligaciones" aria-live="polite"></ol>
+            <p class="nota" style="margin-top:20px">Fuentes: Ley N.&#8288;°&nbsp;29783 y su Reglamento (D. S. N.&#8288;°&nbsp;005-2012-TR) con sus modificatorias, R. M. N.&#8288;°&nbsp;050-2013-TR, R. M. N.&#8288;°&nbsp;085-2013-TR y D. S. N.&#8288;°&nbsp;014-2013-TR. Guía referencial; no reemplaza la evaluación de cada caso.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Método -->
-    <section class="seccion seccion--carbon" id="metodo" aria-labelledby="t-metodo">
-      <div class="contenedor">
-        <div class="cabeza-seccion aparece">
-          <div>
-            <span class="antetitulo"><span>04</span>Método</span>
-            <h2 class="titulo-seccion" id="t-metodo">Tres momentos de la prudencia, aplicados a la gestión.</h2>
-          </div>
-          <p>Aprender de lo ocurrido, mirar con atención lo que ocurre y decidir antes de que ocurra un accidente.</p>
+    <section class="seccion seccion--2" id="autodiagnostico" aria-labelledby="t-auto">
+      <div class="contenedor rejilla">
+        <div class="r-5">
+          <p class="ante">Autodiagnóstico</p>
+          <h2 class="titulo revela" id="t-auto">Mida su cumplimiento antes de que lo haga un inspector</h2>
+          <p class="bajada revela">Doce preguntas sobre los requisitos básicos del sistema de gestión. Toma tres minutos y al final verá las brechas ordenadas por prioridad.</p>
         </div>
-
-        <div class="metodo">
-          <article class="momento aparece">
-            <div class="momento__foto"><img src="assets/img/memoria-900.jpg" srcset="assets/img/memoria-900.jpg 900w, assets/img/memoria.jpg 1600w" sizes="(max-width: 920px) 100vw, 33vw" width="900" height="675" loading="lazy" alt="Dos personas revisan planos y registros sobre una mesa de trabajo"></div>
-            <span class="momento__numero">01</span>
-            <h3>Memoria</h3>
-            <p class="momento__pregunta">¿Qué ocurrió?</p>
-            <p>Registros, investigación de incidentes y estadísticas. Aprender de lo ocurrido para que no se repita.</p>
-          </article>
-          <article class="momento aparece">
-            <div class="momento__foto"><img src="assets/img/inteligencia-900.jpg" srcset="assets/img/inteligencia-900.jpg 900w, assets/img/inteligencia.jpg 1600w" sizes="(max-width: 920px) 100vw, 33vw" width="900" height="675" loading="lazy" alt="Dos inspectores con casco y chaleco examinan de cerca un muro de bloques"></div>
-            <span class="momento__numero">02</span>
-            <h3>Inteligencia</h3>
-            <p class="momento__pregunta">¿Qué ocurre?</p>
-            <p>Inspecciones, diagnóstico inicial e identificación de peligros en el puesto de trabajo, con pruebas a la vista.</p>
-          </article>
-          <article class="momento aparece">
-            <div class="momento__foto"><img src="assets/img/prevision-900.jpg" srcset="assets/img/prevision-900.jpg 900w, assets/img/prevision.jpg 1600w" sizes="(max-width: 920px) 100vw, 33vw" width="900" height="675" loading="lazy" alt="Brigadista con casco rojo revisa un documento junto a un grupo de personas en el exterior de un edificio"></div>
-            <span class="momento__numero">03</span>
-            <h3>Previsión</h3>
-            <p class="momento__pregunta">¿Qué puede ocurrir?</p>
-            <p>Evaluación de riesgos, jerarquía de controles, planes de emergencia y simulacros: decidir antes de que ocurra un accidente.</p>
-          </article>
+        <div class="r-7 tarjeta revela" id="auto">
+          <div id="auto-marco">
+            <div class="auto__barra" aria-hidden="true"><span id="auto-avance"></span></div>
+            <div class="auto__pregunta" id="auto-pregunta" aria-live="polite"></div>
+            <div class="respuestas" id="auto-resp" role="group" aria-label="Respuesta">
+              <button type="button" class="resp resp--si" data-v="2"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11 18.5c1.3 1.8 3 2.7 5 2.7s3.7-.9 5-2.7"/><path d="M12 13h.01M20 13h.01"/></svg>Sí</button>
+              <button type="button" class="resp resp--parte" data-v="1"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11 20h10"/><path d="M12 13h.01M20 13h.01"/></svg>En parte</button>
+              <button type="button" class="resp resp--no" data-v="0"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11 21.5c1.3-1.8 3-2.7 5-2.7s3.7.9 5 2.7"/><path d="M12 13h.01M20 13h.01"/></svg>No</button>
+            </div>
+            <div class="auto__pie"><button type="button" id="auto-atras" disabled>Pregunta anterior</button><span id="auto-conteo" class="tnum">1 de 12</span></div>
+          </div>
+          <div class="resultado" id="auto-resultado" hidden>
+            <svg class="anillo" viewBox="0 0 120 120" aria-hidden="true"><g transform="rotate(-90 60 60)"><circle class="pista" cx="60" cy="60" r="52"/><circle class="valor" id="anillo-v" cx="60" cy="60" r="52"/></g><text x="60" y="60" text-anchor="middle" dominant-baseline="central"><tspan id="auto-puntaje">0</tspan><tspan class="pc" dx="2" dy="-8">%</tspan></text></svg>
+            <div>
+              <span class="nivel" id="auto-nivel"></span>
+              <p id="auto-texto"></p>
+              <ul class="brechas" id="auto-brechas"></ul>
+              <div class="acciones">
+                <button class="btn btn--primario" type="button" id="auto-enviar">Solicitar diagnóstico</button>
+                <button class="btn btn--secundario" type="button" id="auto-reiniciar">Volver a empezar</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- A quiénes protegemos -->
-    <section class="seccion" id="protegemos" aria-labelledby="t-protegemos">
-      <div class="contenedor">
-        <div class="reticula">
-          <div class="protegemos__foto aparece">
-            <img src="assets/img/persona-retrato-900.jpg" srcset="assets/img/persona-retrato-900.jpg 900w, assets/img/persona-retrato.jpg 1400w" sizes="(max-width: 920px) 100vw, 40vw" width="900" height="1125" loading="lazy" alt="Retrato de un trabajador con gorra y overol con cintas reflectivas, de brazos cruzados">
-          </div>
-          <div class="protegemos__texto aparece">
-            <span class="antetitulo"><span>05</span>A quiénes protegemos</span>
-            <h2 class="titulo-seccion" id="t-protegemos">Detrás de cada indicador hay una persona.</h2>
-            <ul class="protegidos">
-              <li><span>01</span><div><h3>Los trabajadores</h3><p>Quienes ejecutan la tarea y están expuestos al riesgo.</p></div></li>
-              <li><span>02</span><div><h3>Las organizaciones</h3><p>Los clientes que necesitan cumplir la normativa y sostener su operación sin incidentes ni paralizaciones.</p></div></li>
-              <li><span>03</span><div><h3>Las personas y sus familias</h3><p>Lo que está en juego detrás de cada indicador.</p></div></li>
-            </ul>
-          </div>
+    <section class="seccion" id="multas" aria-labelledby="t-calc">
+      <div class="contenedor rejilla">
+        <div class="r-5">
+          <p class="ante">Calculadora de multas</p>
+          <h2 class="titulo revela" id="t-calc">Cuánto puede costar una infracción ante SUNAFIL</h2>
+          <p class="bajada revela">Elija el tamaño de la empresa, la gravedad y los trabajadores afectados. El cálculo usa la tabla vigente del Reglamento de la Ley General de Inspección del Trabajo.</p>
+          <p class="nota revela">Cálculo referencial con la UIT 2026 de S/&nbsp;5&nbsp;500 (D. S. N.&#8288;°&nbsp;301-2025-EF) y el art. 48.1 del D. S. N.&#8288;°&nbsp;019-2006-TR, modificado por el D. S. N.&#8288;°&nbsp;008-2020-TR. Las tablas de micro y pequeña empresa exigen inscripción en el REMYPE. Si un accidente causa la muerte o una incapacidad permanente, se considera afectados a todos los trabajadores. Cada infracción se multa por separado.</p>
         </div>
+        <form class="r-7 r-primero tarjeta calc revela" id="calc-form" onsubmit="return false" aria-label="Calculadora de multas">
+          <fieldset>
+            <legend>Tamaño de la empresa</legend>
+            <div class="chips">
+              <label><input type="radio" name="c-t" value="micro"><span>Micro</span></label>
+              <label><input type="radio" name="c-t" value="pequena"><span>Pequeña</span></label>
+              <label><input type="radio" name="c-t" value="nomype" checked><span>No MYPE</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Gravedad de la infracción</legend>
+            <div class="chips">
+              <label><input type="radio" name="c-g" value="leve"><span>Leve</span></label>
+              <label><input type="radio" name="c-g" value="grave" checked><span>Grave</span></label>
+              <label><input type="radio" name="c-g" value="muy_grave"><span>Muy grave</span></label>
+            </div>
+          </fieldset>
+          <label class="et" for="c-n">Trabajadores afectados</label>
+          <div class="campo-num"><input type="number" id="c-n" min="1" max="5000" value="30" inputmode="numeric"></div>
+          <div class="resultado-multa" aria-live="polite">
+            <span>Multa por cada infracción</span>
+            <strong id="calc-soles">S/ 0</strong>
+            <span id="calc-uit" class="tnum">0 UIT</span>
+            <div class="medidor" aria-hidden="true"><span id="calc-barra"></span></div>
+            <p id="calc-tramo"></p>
+          </div>
+        </form>
+      </div>
+    </section>
 
-        <div class="tamanos">
-          <h3 class="aparece">Un acompañamiento a la medida de cada empresa</h3>
-          <ul>
-            <li class="aparece"><h4>Micro y pequeñas empresas</h4><p>Cumplir de forma simple, ordenada y a un costo razonable.</p></li>
-            <li class="aparece"><h4>Medianas empresas</h4><p>Ordenar y sostener un sistema de gestión que acompañe su crecimiento.</p></li>
-            <li class="aparece"><h4>Gran industria y minería</h4><p>Elevar estándares, gestionar contratistas y responder a auditorías exigentes.</p></li>
-          </ul>
+    <section class="seccion seccion--2" id="metodo" aria-labelledby="t-metodo">
+      <div class="contenedor">
+        <div class="cabeza-seccion">
+          <p class="ante">Método</p>
+          <h2 class="titulo revela" id="t-metodo">Tres momentos de la prudencia aplicados a la gestión</h2>
+          <p class="bajada revela">Mirar lo que pasó, entender lo que pasa y decidir antes de que pase. Así se ordena cada proyecto.</p>
+        </div>
+        <div class="momentos">
+          <article class="tarjeta momento revela"><picture><source type="image/avif" srcset="assets/img/recorrido-1000.avif 1000w, assets/img/recorrido-1800.avif 1800w" sizes="(min-width: 768px) 33vw, 100vw"><source type="image/webp" srcset="assets/img/recorrido-1000.webp 1000w, assets/img/recorrido-1800.webp 1800w" sizes="(min-width: 768px) 33vw, 100vw"><img src="assets/img/recorrido-1000.jpg" width="1000" height="635" alt="Supervisor y técnico revisan planos dentro de una nave industrial" loading="lazy" decoding="async"></picture><div class="momento__txt"><span class="momento__n">Primer momento</span><h3>Memoria</h3><p class="pregunta">¿Qué ocurrió?</p><p>Registros, investigación de incidentes y estadísticas. Aprender de lo ocurrido para que no se repita.</p></div></article>
+          <article class="tarjeta momento revela"><picture><source type="image/avif" srcset="assets/img/maquina-1000.avif 1000w, assets/img/maquina-1800.avif 1800w" sizes="(min-width: 768px) 33vw, 100vw"><source type="image/webp" srcset="assets/img/maquina-1000.webp 1000w, assets/img/maquina-1800.webp 1800w" sizes="(min-width: 768px) 33vw, 100vw"><img src="assets/img/maquina-1000.jpg" width="1000" height="563" alt="Técnico con casco y guantes inspecciona una máquina" loading="lazy" decoding="async"></picture><div class="momento__txt"><span class="momento__n">Segundo momento</span><h3>Inteligencia</h3><p class="pregunta">¿Qué ocurre?</p><p>Inspecciones, diagnóstico inicial e identificación de peligros en el puesto, con pruebas a la vista.</p></div></article>
+          <article class="tarjeta momento revela"><picture><source type="image/avif" srcset="assets/img/planta-1000.avif 1000w, assets/img/planta-1800.avif 1800w" sizes="(min-width: 768px) 33vw, 100vw"><source type="image/webp" srcset="assets/img/planta-1000.webp 1000w, assets/img/planta-1800.webp 1800w" sizes="(min-width: 768px) 33vw, 100vw"><img src="assets/img/planta-1000.jpg" width="1000" height="670" alt="Ingeniero con casco revisa un documento frente a una planta de procesos" loading="lazy" decoding="async"></picture><div class="momento__txt"><span class="momento__n">Tercer momento</span><h3>Previsión</h3><p class="pregunta">¿Qué puede ocurrir?</p><p>Evaluación de riesgos, controles, planes de emergencia y simulacros: decidir antes de que ocurra un accidente.</p></div></article>
         </div>
       </div>
     </section>
 
-    <!-- Cómo trabajamos -->
-    <section class="seccion seccion--lino" id="proceso" aria-labelledby="t-proceso" style="padding-bottom:0">
-      <div class="contenedor">
-        <div class="cabeza-seccion aparece">
-          <div>
-            <span class="antetitulo"><span>06</span>Cómo trabajamos</span>
-            <h2 class="titulo-seccion" id="t-proceso">En planta, junto a su equipo, hasta que el resultado se sostenga.</h2>
-          </div>
+    <section class="seccion" id="controles" aria-labelledby="t-controles">
+      <div class="contenedor rejilla">
+        <div class="r-5">
+          <p class="ante">Jerarquía de controles</p>
+          <h2 class="titulo revela" id="t-controles">El equipo de protección es la última barrera, no la primera</h2>
+          <p class="bajada revela">No todas las medidas protegen igual. Toque cada nivel para ver cómo se aplica a un trabajo en altura.</p>
+          <div class="ficha detalle" id="jer-det" aria-live="polite"></div>
         </div>
-        <ol class="pasos" style="list-style:none;margin:0;padding:0">
-          <li class="paso aparece"><span class="paso__numero" aria-hidden="true">01</span><h3>Diagnóstico</h3><p>Visita a planta y revisión documental.</p></li>
-          <li class="paso aparece"><span class="paso__numero" aria-hidden="true">02</span><h3>Plan</h3><p>Prioridades según el nivel de riesgo y la jerarquía de controles.</p></li>
-          <li class="paso aparece"><span class="paso__numero" aria-hidden="true">03</span><h3>Implementación</h3><p>Acompañamiento en campo, capacitación y documentación.</p></li>
-          <li class="paso aparece"><span class="paso__numero" aria-hidden="true">04</span><h3>Seguimiento</h3><p>Indicadores, auditoría interna y mejora continua.</p></li>
+        <div class="r-7">
+          <ol class="controles" id="controles-lista">
+            <li><button type="button" data-j="0" aria-pressed="true"><span class="controles__n">1</span><span class="controles__t">Eliminación</span><span class="controles__m"><i style="--e:100%"></i></span></button></li>
+            <li><button type="button" data-j="1" aria-pressed="false"><span class="controles__n">2</span><span class="controles__t">Sustitución</span><span class="controles__m"><i style="--e:80%"></i></span></button></li>
+            <li><button type="button" data-j="2" aria-pressed="false"><span class="controles__n">3</span><span class="controles__t">Controles de ingeniería</span><span class="controles__m"><i style="--e:60%"></i></span></button></li>
+            <li><button type="button" data-j="3" aria-pressed="false"><span class="controles__n">4</span><span class="controles__t">Controles administrativos</span><span class="controles__m"><i style="--e:40%"></i></span></button></li>
+            <li><button type="button" data-j="4" aria-pressed="false"><span class="controles__n">5</span><span class="controles__t">Equipo de protección personal</span><span class="controles__m"><i style="--e:20%"></i></span></button></li>
+          </ol>
+          <div class="controles__eje" aria-hidden="true"><span>Más eficaz arriba</span><span>Menos eficaz abajo</span></div>
+          <p class="nota" style="margin-top:16px">Orden de prioridad de la Ley N.&#8288;°&nbsp;29783, art. 21, y modelo de jerarquía de controles de NIOSH.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--2" id="proceso" aria-labelledby="t-proceso">
+      <div class="contenedor">
+        <div class="cabeza-seccion">
+          <p class="ante">Cómo trabajamos</p>
+          <h2 class="titulo revela" id="t-proceso">En planta, junto a su equipo, hasta que el resultado se sostenga</h2>
+        </div>
+        <ol class="pasos" id="pasos">
+          <li class="paso"><h3>Diagnóstico</h3><p>Visita a planta y revisión documental: qué hay, qué falta y qué está en riesgo hoy.</p></li>
+          <li class="paso"><h3>Plan</h3><p>Prioridades ordenadas por nivel de riesgo y jerarquía de controles, con responsables y plazos.</p></li>
+          <li class="paso"><h3>Implementación</h3><p>Acompañamiento en campo, capacitación y documentos hechos para usarse, no para archivarse.</p></li>
+          <li class="paso"><h3>Seguimiento</h3><p>Indicadores, auditoría interna y mejora continua hasta que el cambio sea rutina.</p></li>
         </ol>
       </div>
-      <div class="banda-foto" style="margin-top:clamp(80px,10vw,144px)">
-        <img src="assets/img/obra-armadura.jpg" srcset="assets/img/obra-armadura-900.jpg 900w, assets/img/obra-armadura.jpg 1400w" sizes="100vw" width="1400" height="933" loading="lazy" alt="Vista aérea de un trabajador con chaleco naranja que camina sobre una gran malla de acero de refuerzo">
-      </div>
     </section>
 
-    <section class="sectores" id="sectores" aria-labelledby="t-sectores">
-      <div class="contenedor reticula">
-        <div class="sectores__foto aparece">
-          <img src="assets/img/trabajo-altura-900.jpg" srcset="assets/img/trabajo-altura-900.jpg 900w, assets/img/trabajo-altura.jpg 1400w" sizes="(max-width: 920px) 100vw, 40vw" width="900" height="1125" loading="lazy" alt="Trabajador con casco amarillo y arnés de seguridad realiza un trabajo en altura">
-        </div>
-        <div class="sectores__texto aparece">
-          <span class="antetitulo"><span>07</span>Sectores</span>
-          <h2 class="titulo-seccion" id="t-sectores">Donde el riesgo forma parte de la tarea diaria.</h2>
-          <ul class="sectores__lista">
-            <li><span>01</span>Construcción</li>
-            <li><span>02</span>Industria y manufactura</li>
-            <li><span>03</span>Minería y energía</li>
-            <li><span>04</span>Logística y almacenes</li>
-            <li><span>05</span>Comercio y servicios</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Manifiesto -->
-    <section class="manifiesto" id="manifiesto" aria-labelledby="t-manifiesto">
+    <section class="seccion" id="sectores" aria-labelledby="t-sectores">
       <div class="contenedor">
-        <span class="antetitulo aparece"><span>08</span>Manifiesto</span>
-        <div class="manifiesto__cuerpo">
-          <h2 class="manifiesto__primera aparece" id="t-manifiesto">Creemos que ningún trabajo vale una vida.</h2>
-          <p class="aparece">Creemos que la seguridad no se impone: se comprende, se practica y se vuelve hábito.</p>
-          <p class="aparece">Creemos en ver antes. En detenerse a tiempo. En preguntar cuando algo no está claro.</p>
-          <p class="aparece">Creemos que un documento bien hecho importa, pero importa más la persona que decide bien cuando nadie la observa.</p>
-          <p class="aparece">Por eso no vendemos trámites. Formamos criterio.</p>
-          <div class="manifiesto__cierre aparece">
-            <strong>Somos Prudentia Safe.</strong>
-            <em>Seguridad que trasciende.</em>
-          </div>
+        <div class="cabeza-seccion">
+          <p class="ante">Sectores</p>
+          <h2 class="titulo revela" id="t-sectores">Donde el riesgo forma parte de la tarea diaria</h2>
+          <p class="bajada revela">De la microempresa que necesita cumplir de forma simple a la gran industria que gestiona contratistas y auditorías exigentes.</p>
+        </div>
+        <ul class="sectores__lista">
+          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/altura-1000.avif 1000w, assets/img/altura-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/altura-1000.webp 1000w, assets/img/altura-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/altura-1000.jpg" width="1000" height="667" alt="Trabajadores con arnés sobre una cubierta" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Construcción</h3><p>Trabajos en altura, excavaciones e izaje.</p></div></li>
+          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/maquina-1000.avif 1000w, assets/img/maquina-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/maquina-1000.webp 1000w, assets/img/maquina-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/maquina-1000.jpg" width="1000" height="563" alt="Técnico inspecciona maquinaria" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Industria y manufactura</h3><p>Máquinas, energía peligrosa y sustancias.</p></div></li>
+          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/mina-1000.avif 1000w, assets/img/mina-1800.avif 1600w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/mina-1000.webp 1000w, assets/img/mina-1800.webp 1600w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/mina-1000.jpg" width="1000" height="562" alt="Vista aérea de una mina a tajo abierto en los Andes del Perú" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Minería y energía</h3><p>Contratistas, espacios confinados y emergencias.</p></div></li>
+          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/montacargas-1000.avif 1000w, assets/img/montacargas-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/montacargas-1000.webp 1000w, assets/img/montacargas-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/montacargas-1000.jpg" width="1000" height="667" alt="Operario conduce un montacargas" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Logística y almacenes</h3><p>Equipos móviles y manipulación de cargas.</p></div></li>
+          <li class="sector revela"><picture><source type="image/avif" srcset="assets/img/auxilios-1000.avif 1000w, assets/img/auxilios-1800.avif 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><source type="image/webp" srcset="assets/img/auxilios-1000.webp 1000w, assets/img/auxilios-1800.webp 1800w" sizes="(min-width: 1280px) 20vw, 80vw"><img src="assets/img/auxilios-1000.jpg" width="1000" height="667" alt="Trabajadores atienden a un compañero durante un simulacro" loading="lazy" decoding="async"></picture><div class="sector__txt"><h3>Comercio y servicios</h3><p>Emergencias, atención al público y ergonomía.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion seccion--2" id="preguntas" aria-labelledby="t-preguntas">
+      <div class="contenedor rejilla">
+        <div class="r-4">
+          <p class="ante">Preguntas frecuentes</p>
+          <h2 class="titulo revela" id="t-preguntas">Respuestas breves con la norma a la mano</h2>
+          <p class="bajada revela">Para su caso concreto, escríbanos y lo revisamos con usted.</p>
+        </div>
+        <div class="r-8 faq">
+          <details><summary>¿Desde cuántos trabajadores se necesita un comité de seguridad y salud en el trabajo?</summary><p>Desde 20 trabajadores se conforma un comité paritario de SST. Con menos de 20, los trabajadores eligen a un supervisor de SST (Ley N.&#8288;°&nbsp;29783, arts. 29 y 30). Desde 20 trabajadores también es obligatorio el Reglamento Interno de SST.</p></details>
+          <details><summary>¿Cuántas capacitaciones al año exige la ley?</summary><p>No menos de cuatro capacitaciones al año en seguridad y salud en el trabajo (Ley N.&#8288;°&nbsp;29783, art. 35, literal b), registradas en el registro de inducción, capacitación, entrenamiento y simulacros.</p></details>
+          <details><summary>¿Cada cuánto deben hacerse los exámenes médicos ocupacionales?</summary><p>Cada dos años, a cargo del empleador. En actividades de alto riesgo se hacen antes, durante y al término de la relación laboral; el examen de salida es facultativo (Ley N.&#8288;°&nbsp;29783, art. 49, literal d, modificado por la Ley N.&#8288;°&nbsp;30222).</p></details>
+          <details><summary>¿Qué registros debe llevar una empresa?</summary><p>Ocho registros: accidentes, enfermedades e incidentes; exámenes médicos; monitoreo de agentes; inspecciones internas; estadísticas; equipos de seguridad o emergencia; inducción, capacitación y simulacros; y auditorías (Reglamento, art. 33). Las micro y pequeñas empresas pueden usar el sistema simplificado de la R. M. N.&#8288;°&nbsp;085-2013-TR.</p></details>
+          <details><summary>¿Cuánto tiempo hay que conservar los registros?</summary><p>Veinte años los de enfermedades ocupacionales, diez años los de accidentes e incidentes peligrosos y cinco años los demás (Reglamento, art. 35).</p></details>
+          <details><summary>¿Cada cuánto se audita el sistema de gestión?</summary><p>Cada dos años si hay actividades de alto riesgo y cada tres en los demás casos. Con hasta diez trabajadores y sin alto riesgo, solo cuando la Inspección del Trabajo lo dispone. La auditoría la hace un auditor independiente registrado ante el MTPE.</p></details>
+          <details><summary>¿Qué consecuencias tiene incumplir la normativa?</summary><p>Multas de SUNAFIL según la gravedad, el tamaño de la empresa y los trabajadores afectados. Además, el art. 168-A del Código Penal sanciona a quien infringe deliberadamente las normas de seguridad y pone en peligro grave la vida o la salud de los trabajadores, con pena de uno a cuatro años; de cuatro a ocho si hay muerte y de tres a seis si hay lesiones graves.</p></details>
         </div>
       </div>
     </section>
 
-    <!-- Entregables -->
-    <section class="seccion" id="entregables" aria-labelledby="t-entregables">
+    <section class="cierre sobre-foto" id="cierre" aria-labelledby="t-cierre">
+      <video muted loop playsinline preload="none" poster="assets/img/mina-1800.webp" aria-hidden="true" data-diferido><source data-src="assets/video/mina.mp4" type="video/mp4"></video>
+      <div class="cierre__velo" aria-hidden="true"></div>
       <div class="contenedor">
-        <div class="cabeza-seccion aparece">
-          <div>
-            <span class="antetitulo"><span>09</span>Entregables</span>
-            <h2 class="titulo-seccion" id="t-entregables">Documentos pensados para usarse en planta.</h2>
-          </div>
-          <p>Cada servicio concluye con entregables claros, que la organización conserva y puede sostener con sus propios recursos.</p>
-        </div>
-        <div class="galeria">
-          <figure class="aparece">
-            <div class="marco"><img src="assets/img/documentos-900.jpg" srcset="assets/img/documentos-900.jpg 900w, assets/img/documentos.jpg 1400w" sizes="(max-width: 920px) 100vw, 58vw" width="900" height="562" loading="lazy" alt="Informe técnico de diagnóstico de línea base y certificado de capacitación con la identidad de Prudentia Safe"></div>
-            <figcaption><strong>Diagnóstico inicial y certificados</strong>Informe de línea base y certificados de capacitación con código de verificación.</figcaption>
-          </figure>
-          <figure class="aparece">
-            <div class="marco"><img src="assets/img/informe-900.jpg" srcset="assets/img/informe-900.jpg 900w, assets/img/informe.jpg 1400w" sizes="(max-width: 920px) 100vw, 42vw" width="900" height="562" loading="lazy" alt="Informe abierto con un gráfico de evolución de indicadores y una lista de medidas priorizadas"></div>
-            <figcaption><strong>Indicadores y plan de acción</strong>Medidas priorizadas según la jerarquía de controles.</figcaption>
-          </figure>
-          <figure class="aparece">
-            <div class="marco"><img src="assets/img/ficha-900.jpg" srcset="assets/img/ficha-900.jpg 900w, assets/img/ficha.jpg 1400w" sizes="(max-width: 920px) 100vw, 42vw" width="900" height="562" loading="lazy" alt="Lista de verificación de inspección sujeta a un portapapeles"></div>
-            <figcaption><strong>Inspecciones en campo</strong>Listas de verificación y registros obligatorios.</figcaption>
-          </figure>
-          <figure class="aparece">
-            <div class="marco"><img src="assets/img/casco-900.jpg" srcset="assets/img/casco-900.jpg 900w, assets/img/casco.jpg 1400w" sizes="(max-width: 920px) 100vw, 58vw" width="900" height="562" loading="lazy" alt="Casco de seguridad blanco con el símbolo de Prudentia Safe"></div>
-            <figcaption><strong>Equipos de protección personal</strong>Matriz de EPP por puesto, provisión y control de reposición.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="seccion seccion--lino" id="contacto" aria-labelledby="t-contacto">
-      <div class="contenedor reticula">
-        <div class="contacto__texto aparece">
-          <span class="antetitulo"><span>10</span>Contacto</span>
-          <h2 class="titulo-seccion" id="t-contacto">Solicite un diagnóstico inicial.</h2>
-          <p class="lectura">El punto de partida es una visita a planta y una revisión documental. A partir de ahí se definen las prioridades según el nivel de riesgo.</p>
-          <a class="contacto__correo" href="mailto:contacto@prudentiasafe.com">contacto@prudentiasafe.com</a>
-          <div class="contacto__datos">
-            <span>Prudentia Safe S.A.C.</span>
-            <span>Lima, Perú</span>
-          </div>
-        </div>
-
-        <form class="formulario aparece" id="formulario" novalidate aria-labelledby="t-formulario">
-          <h3 id="t-formulario">Cuéntenos sobre su operación</h3>
-          <p>Al enviar, se abrirá su programa de correo con el mensaje listo para remitir a contacto@prudentiasafe.com.</p>
-          <div class="campos">
-            <div class="campo">
-              <label for="f-nombre">Nombre y apellido</label>
-              <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
-            </div>
-            <div class="campo">
-              <label for="f-empresa">Empresa</label>
-              <input id="f-empresa" name="empresa" type="text" autocomplete="organization" required>
-            </div>
-            <div class="campo">
-              <label for="f-correo">Correo electrónico</label>
-              <input id="f-correo" name="correo" type="email" autocomplete="email" required>
-            </div>
-            <div class="campo">
-              <label for="f-telefono">Teléfono <small>(opcional)</small></label>
-              <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">
-            </div>
-            <div class="campo">
-              <label for="f-tamano">Tamaño de la empresa</label>
-              <select id="f-tamano" name="tamano">
-                <option value="">Seleccione una opción</option>
-                <option>Micro o pequeña empresa</option>
-                <option>Mediana empresa</option>
-                <option>Gran industria o minería</option>
-              </select>
-            </div>
-            <div class="campo">
-              <label for="f-servicio">Servicio de interés</label>
-              <select id="f-servicio" name="servicio">
-                <option value="">Seleccione una opción</option>
-                <option>Diagnóstico inicial</option>
-                <option>Consultoría y asesoría</option>
-                <option>Capacitación</option>
-                <option>Implementación del SG-SST</option>
-                <option>Equipos de protección personal</option>
-              </select>
-            </div>
-            <div class="campo campo--completo">
-              <label for="f-mensaje">Mensaje</label>
-              <textarea id="f-mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-          </div>
-          <div class="formulario__pie">
-            <button class="boton" type="submit">Preparar correo
-              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
-            </button>
-            <p class="formulario__nota">Los datos se usan solo para responder su solicitud. Consulte el <a href="privacidad.html">aviso de privacidad</a>.</p>
-          </div>
-          <p class="formulario__estado" id="formulario-estado" role="status" aria-live="polite"></p>
-        </form>
+        <h2 id="t-cierre" class="revela">Creemos que ningún trabajo vale una vida</h2>
+        <p class="revela">Creemos en ver antes, en detenerse a tiempo y en preguntar cuando algo no está claro. Por eso no vendemos trámites: formamos criterio.</p>
+        <button class="btn btn--primario revela" type="button" data-abrir-hoja>Solicitar diagnóstico</button>
+        <p class="firma revela">Prudentia Safe. Seguridad que trasciende.</p>
       </div>
     </section>
   </main>
 
   <footer class="pie">
     <div class="contenedor">
-      <div class="pie__superior">
-        <div class="pie__marca">
-          <span class="logo"><img src="assets/logos/Horizontal%20negativo%20sobre%20carb%C3%B3n.svg" alt="Prudentia Safe" width="720" height="200" loading="lazy"></span>
-          <p class="pie__eslogan">Seguridad que trasciende</p>
+      <div class="pie__cols">
+        <div>
+          <img class="pie__logo logo-claro-pie" src="assets/logos/Horizontal%20a%20color.svg" alt="Prudentia Safe" width="720" height="200" loading="lazy">
+          <img class="pie__logo logo-oscuro" src="assets/logos/Horizontal%20monocromo%20blanco.svg" alt="Prudentia Safe" width="720" height="200" loading="lazy">
+          <p>Consultora peruana de seguridad y salud en el trabajo. Del cumplimiento normativo a la cultura preventiva.</p>
         </div>
-        <nav class="pie__col" aria-label="Secciones">
+        <nav aria-label="Enlaces del pie">
           <h2>Secciones</h2>
-          <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#metodo">Método</a></li>
-            <li><a href="#entregables">Entregables</a></li>
-          </ul>
+          <ul><li><a href="#cifras">Cifras</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#ley">Lo que exige la ley</a></li><li><a href="#autodiagnostico">Autodiagnóstico</a></li><li><a href="#multas">Calculadora de multas</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li></ul>
         </nav>
-        <div class="pie__col pie__col--ancha">
-          <h2>Contacto</h2>
-          <ul>
-            <li><a href="mailto:contacto@prudentiasafe.com">contacto@prudentiasafe.com</a></li>
-            <li>Lima, Perú</li>
-            <li><a href="privacidad.html">Aviso de privacidad</a></li>
-          </ul>
+        <div>
+          <h2>Prudentia Safe S.A.C.</h2>
+          <ul><li><a href="mailto:contacto@prudentiasafe.com">contacto@prudentiasafe.com</a></li><li>Lima, Perú</li><li><a href="privacidad.html">Aviso de privacidad</a></li></ul>
         </div>
       </div>
-      <div class="pie__inferior">
-        <span>© 2026 Prudentia Safe S.A.C. · Lima, Perú</span>
-        <span>prudentiasafe.com</span>
+      <p class="creditos">Fotografías y videos con licencia de Envato Elements: Pressmaster, wosunan, NewJadsada, StreetOncamara, AlexVog, FoToArtist_1, Wavebreakmedia, PerfectAngleImages, prathanchorruangsak, LightFieldStudios y BlackBoxGuild. Datos: MTPE, OIT, Ley N.&#8288;°&nbsp;29783 y normas citadas en cada sección.</p>
+      <div class="pie__inf">
+        <span>© 2026 Prudentia Safe S.A.C.</span>
+        <div class="tema" role="group" aria-label="Apariencia">
+          <button type="button" data-tema="auto" aria-pressed="true">Automático</button>
+          <button type="button" data-tema="light" aria-pressed="false">Claro</button>
+          <button type="button" data-tema="dark" aria-pressed="false">Oscuro</button>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/sitio.js" defer></script>
+  <div class="hoja" id="hoja" aria-hidden="true">
+    <div class="hoja__fondo" data-cerrar-hoja></div>
+    <div class="hoja__panel" role="dialog" aria-modal="true" aria-labelledby="t-hoja">
+      <div class="hoja__cab">
+        <h2 id="t-hoja">Solicite un diagnóstico inicial</h2>
+        <button class="hoja__cerrar" type="button" data-cerrar-hoja aria-label="Cerrar el formulario"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <p class="bajada">Cuéntenos sobre su operación. Al enviar, se abrirá su programa de correo con el mensaje listo para remitir.</p>
+      <form id="formulario" novalidate>
+        <div class="campos">
+          <div class="campo"><label for="f-nombre">Nombre y apellido</label><input id="f-nombre" name="nombre" type="text" autocomplete="name" required></div>
+          <div class="campo"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" type="text" autocomplete="organization" required></div>
+          <div class="campo"><label for="f-correo">Correo electrónico</label><input id="f-correo" name="correo" type="email" autocomplete="email" required></div>
+          <div class="campo"><label for="f-telefono">Teléfono <small>(opcional)</small></label><input id="f-telefono" name="telefono" type="tel" autocomplete="tel"></div>
+          <div class="campo"><label for="f-tamano">Tamaño de la empresa</label><select id="f-tamano" name="tamano"><option value="">Seleccione una opción</option><option>Micro o pequeña empresa</option><option>Mediana empresa</option><option>Gran industria o minería</option></select></div>
+          <div class="campo"><label for="f-servicio">Servicio de interés</label><select id="f-servicio" name="servicio"><option value="">Seleccione una opción</option><option>Diagnóstico inicial</option><option>Consultoría y asesoría</option><option>Capacitación</option><option>Implementación del SG-SST</option><option>Equipos de protección personal</option></select></div>
+          <div class="campo campo--ancho"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" name="mensaje" rows="5" required></textarea></div>
+        </div>
+        <p class="error" id="form-error" role="alert" hidden>Falta completar: nombre, empresa, un correo válido y el mensaje.</p>
+        <button class="btn btn--primario btn--bloque" type="submit">Preparar el correo</button>
+      </form>
+      <div class="datos-contacto">También puede escribir directamente a <a href="mailto:contacto@prudentiasafe.com">contacto@prudentiasafe.com</a>.</div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js?v=3" defer></script>
 </body>
 </html>
